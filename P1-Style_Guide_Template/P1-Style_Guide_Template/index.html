@@ -33,12 +33,18 @@
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
 
-
+<!--Text input field with label-->
+<!--Drew from the sample website HTML tutorial file in the first lecture-->
       <section class="element">
         <h3>In-text link</h3>
-        <p>Click <a href="https://ironoakgames.com/" target="_blank">this</a> to go directly to our website!</p>
+        <label for="generic_input">Example Text Input</label>
+        <p>Click <a href="https://ironoakgames.com/" id="generic_input" target="_blank">this</a> to go directly to our website!</p>
 
-
+        <h4>Sample code:</h4>
+        <code>
+          &lt;label for="generic_input"&gt;Example Text Input&lt;/label&gt;<br>
+        &lt;p&gt;Click &lt;a href="https://ironoakgames.com/" id="generic_input" target="_blank"&gt;this&lt;/a&gt; to go directly to our website!&lt;/p&gt;<br>
+        </code>
       </section>
 
 
@@ -61,46 +67,123 @@
 
       </section>
 
-
+<!--Submit/Reset Buttons-->
+<!--Drew from the "Middle Georgia State University" website on learning HTML-->
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
+
+        <input type="submit" name="submit_button" value="Submit">
+        <input type="reset" name="reset_button" value="Reset">
+
+        <h4>Sample code:</h4>
+        <code>
+        &lt;input type="submit" name="submit_button" value="Submit"&gt;<br>
+        &lt;input type="reset" name="reset_button" value="Reset"&gt;<br>
+        </code>
       </section>
 
-
+<!--Text input field with label-->
+<!--Drew from the sample website HTML tutorial file in the lecture-->
       <section class="element">
         <h3>Text Input Field with Label</h3>
+
+        <form method="post" action="#">
+              <label for="generic_input">Example Text Input</label>
+              <input type="text" id="generic_input" placeholder="Type here:">
+
+              <h4>Sample code:</h4>
+              <code>
+              &lt;label for="generic_input"&gt;Example Text Input&lt;/label&gt;<br>
+              &lt;input type="text" id="generic_input" placeholder="Type here:"&gt;
+              </code>
+        </form>
       </section>
 
-
+<!--Radio Button with Label-->
+<!--Used the W3Schools page on input type="radio".-->
       <section class="element">
         <h3>Radio Button with Label</h3>
+
+        <input type="radio" id="radio_button1" name="radio_button">
+        <label for="radio_button1">Radio Button 1</label>
+        <input type="radio" id="radio_button2" name="radio_button">
+        <label for="radio_button1">Radio Button 2</label>
+        <input type="radio" id="radio_button3" name="radio_button">
+        <label for="radio_button1">Radio Button 3</label>
       </section>
 
-
+<!--Image as a link-->
+<!--The "a" section of HTML Doctor and HTML Standard helped how to place code within the href-->
       <section class="element">
         <h3>Image as a Link</h3>
+
+        <figure> 
+          <a href="https://www.google.com">
+              <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
+          </a>
+        </figure>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;figure&gt;<br>
+            &emsp;&lt;a href="https://www.google.com"&gt;<br>
+              &emsp;&emsp;&lt;img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games."&gt;<br>
+            &emsp;&lt;/a&gt;<br>
+          &lt;/figure&gt;
+        </code>
       </section>
 
 
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-
-
+<!-- Four levels of heading -->
+<!--Drew from the sample website HTML tutorial file in the first lecture-->
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
       <h2>Text Elements</h2>
 
       <section class="element">
         <h3>Headings</h3>
+
+        <h3>Header 1</h3>
+        <h4>Header 2</h4>
+        <h5>Header 3</h5>
+        <h6>Header 4</h6>
+        
+        <h4>Sample code:</h4>
+        <code>
+          &lt;h3&gt;Header 1&lt;/h3&gt;<br>
+          &lt;h4&gt;Header 2&lt;/h4&gt;<br>
+          &lt;h5&gt;Header 3&lt;/h5&gt;<br>
+          &lt;h6&gt;Header 4&lt;/h6&gt;
+        </code>
       </section>
 
+<!-- A paragraph -->
+<!--Drew from the sample website HTML tutorial file in the first lecture-->
       <section class="element">
         <h3>Paragraphs</h3>
+        <p>This is a paragraph.</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        </code>
       </section>
 
+<!--Numbered Lists-->
+<!--Learned from HTML5 Doctor/HTML Standard-->
       <section class="element">
         <h3>Numbered Lists</h3>
+
+        <ol>
+          <li>Entry 1</li>
+          <li>Entry 2</li>
+          <li>Entry 3</li>
+          <li>Entry 4</li>
+          <li>Entry 5</li>
+        </ol>
       </section>
 
     </section>
