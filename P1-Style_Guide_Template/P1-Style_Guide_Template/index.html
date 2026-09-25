@@ -1,24 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
-
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>P01 - Style Guide Template</title>
 
-    <link href="css/main.css" type="text/css" rel="stylesheet">
-
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
   </head>
 
   <body>
-
     <header>
       <h1>P01 - Style Guide Template</h1>
 
-      <p>A template you can use to start building out your own style guides with.</p>
+      <p>
+        A template you can use to start building out your own style guides with.
+      </p>
 
-
-      <nav>        
+      <nav>
         <a href="#interactive_elements">Interactive Elements</a>
         <a href="#text_elements">Text Elements</a>
         <a href="#combined_elements">Combined Elements</a>
@@ -26,30 +23,31 @@
         <a href="checkout.html">Checkout Template</a>
         <a href="#citations">Citations</a>
       </nav>
-
-
     </header>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
       <h2>Interactive Elements</h2>
 
-<!--In-text link-->
-<!--Drew from the sample website HTML tuturial file in the lecture-->
+      <!--In-text link-->
+      <!--Drew from the sample website HTML tuturial file in the lecture-->
       <section class="element">
         <h3>In-text link</h3>
-        <p>Click <a href="https://ironoakgames.com/" target="_blank">this</a> to go directly to our website!</p>
+        <p>
+          Click <a href="https://ironoakgames.com/" target="_blank">this</a> to
+          go directly to our website!
+        </p>
 
         <h4>Sample code:</h4>
         <code>
-        &lt;p&gt;Click &lt;a href="https://ironoakgames.com/" target="_blank"&gt;this&lt;/a&gt; to go directly to our website!&lt;/p&gt;
+          &lt;p&gt;Click &lt;a href="https://ironoakgames.com/"
+          target="_blank"&gt;this&lt;/a&gt; to go directly to our
+          website!&lt;/p&gt;
         </code>
       </section>
 
-
       <!-- Default Button styling section -->
       <section class="element">
-
         <h3>Navigation Link</h3>
         <nav>
           <a href="#combined_elements">Go to Combined Elements</a>
@@ -63,81 +61,83 @@
 
         <h4>Rendered element:</h4>
         <a class="button-nav" href="#">Default Button</a>
-
       </section>
 
-<!--Submit/Reset Buttons-->
-<!--Drew from the "Middle Georgia State University" website on learning HTML-->
+      <!--Submit/Reset Buttons-->
+      <!--Drew from the "Middle Georgia State University" website on learning HTML-->
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
 
-        <input type="submit" name="submit_button" value="Submit">
-        <input type="reset" name="reset_button" value="Reset">
+        <input type="submit" name="submit_button" value="Submit" />
+        <input type="reset" name="reset_button" value="Reset" />
 
         <h4>Sample code:</h4>
         <code>
-        &lt;input type="submit" name="submit_button" value="Submit"&gt;<br>
-        &lt;input type="reset" name="reset_button" value="Reset"&gt;<br>
+          &lt;input type="submit" name="submit_button" value="Submit"&gt;<br />
+          &lt;input type="reset" name="reset_button" value="Reset"&gt;<br />
         </code>
       </section>
 
-<!--Text input field with label-->
-<!--Drew from the sample website HTML tutorial file in the lecture-->
+      <!--Text input field with label-->
+      <!--Drew from the sample website HTML tutorial file in the lecture-->
       <section class="element">
         <h3>Text Input Field with Label</h3>
 
         <form method="post" action="#">
-              <label for="generic_field">Example Text Input Field</label>
-              <input type="text" id="generic_field" placeholder="Type here:">
+          <label for="generic_field">Example Text Input Field</label>
+          <input type="text" id="generic_field" placeholder="Type here:" />
 
-              <h4>Sample code:</h4>
-              <code>
-              &lt;label for="generic_field"&gt;Example Text Input&lt;/label&gt;<br>
-              &lt;input type="text" id="generic_field" placeholder="Type here:"&gt;
-              </code>
+          <h4>Sample code:</h4>
+          <code>
+            &lt;label for="generic_field"&gt;Example Text Input&lt;/label&gt;<br />
+            &lt;input type="text" id="generic_field" placeholder="Type
+            here:"&gt;
+          </code>
         </form>
       </section>
 
-<!--Radio Button with Label-->
-<!--Used the W3Schools page on input type="radio".-->
+      <!--Radio Button with Label-->
+      <!--Used the W3Schools page on input type="radio".-->
       <section class="element">
         <h3>Radio Button with Label</h3>
 
-        <input type="radio" id="radio_button1" name="radio_button">
+        <input type="radio" id="radio_button1" name="radio_button" />
         <label for="radio_button1">Radio Button 1</label>
-        <input type="radio" id="radio_button2" name="radio_button">
+        <input type="radio" id="radio_button2" name="radio_button" />
         <label for="radio_button1">Radio Button 2</label>
-        <input type="radio" id="radio_button3" name="radio_button">
+        <input type="radio" id="radio_button3" name="radio_button" />
         <label for="radio_button1">Radio Button 3</label>
       </section>
 
-<!--Image as a link-->
-<!--The "a" section of HTML Doctor and HTML Standard helped how to place code within the href-->
+      <!--Image as a link-->
+      <!--The "a" section of HTML Doctor and HTML Standard helped how to place code within the href-->
       <section class="element">
         <h3>Image as a Link</h3>
 
-        <figure> 
+        <figure>
           <a href="https://www.google.com">
-              <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
+            <img
+              src="img/ironoakgameslogo.jpeg"
+              alt="The logo for the game studio Iron Oak Games."
+            />
           </a>
         </figure>
 
         <h4>Sample code:</h4>
         <code>
-          &lt;figure&gt;<br>
-            &emsp;&lt;a href="https://www.google.com"&gt;<br>
-              &emsp;&emsp;&lt;img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games."&gt;<br>
-            &emsp;&lt;/a&gt;<br>
+          &lt;figure&gt;<br />
+          &emsp;&lt;a href="https://www.google.com"&gt;<br />
+          &emsp;&emsp;&lt;img src="img/ironoakgameslogo.jpeg" alt="The logo for
+          the game studio Iron Oak Games."&gt;<br />
+          &emsp;&lt;/a&gt;<br />
           &lt;/figure&gt;
         </code>
       </section>
-
-
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-<!-- Four levels of heading -->
-<!--Drew from the sample website HTML tutorial file in the first lecture-->
+    <!-- Four levels of heading -->
+    <!--Drew from the sample website HTML tutorial file in the first lecture-->
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
       <h2>Text Elements</h2>
@@ -149,30 +149,28 @@
         <h4>Header 2</h4>
         <h5>Header 3</h5>
         <h6>Header 4</h6>
-        
+
         <h4>Sample code:</h4>
         <code>
-          &lt;h3&gt;Header 1&lt;/h3&gt;<br>
-          &lt;h4&gt;Header 2&lt;/h4&gt;<br>
-          &lt;h5&gt;Header 3&lt;/h5&gt;<br>
+          &lt;h3&gt;Header 1&lt;/h3&gt;<br />
+          &lt;h4&gt;Header 2&lt;/h4&gt;<br />
+          &lt;h5&gt;Header 3&lt;/h5&gt;<br />
           &lt;h6&gt;Header 4&lt;/h6&gt;
         </code>
       </section>
 
-<!-- A paragraph -->
-<!--Drew from the sample website HTML tutorial file in the first lecture-->
+      <!-- A paragraph -->
+      <!--Drew from the sample website HTML tutorial file in the first lecture-->
       <section class="element">
         <h3>Paragraphs</h3>
         <p>This is a paragraph.</p>
 
         <h4>Sample code:</h4>
-        <code>
-          &lt;p&gt;This is a paragraph.&lt;/p&gt;
-        </code>
+        <code> &lt;p&gt;This is a paragraph.&lt;/p&gt; </code>
       </section>
 
-<!--Numbered Lists-->
-<!--Learned from HTML5 Doctor/HTML Standard-->
+      <!--Numbered Lists-->
+      <!--Learned from HTML5 Doctor/HTML Standard-->
       <section class="element">
         <h3>Numbered Lists</h3>
 
@@ -183,7 +181,6 @@
           <li>Entry 4</li>
           <li>Entry 5</li>
         </ol>
-
       </section>
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -206,8 +203,16 @@
 
       <section class="element">
         <h3>Checkout Cart</h3>
-      </section>
 
+        <table>
+          <tr>
+            <th>Game</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Item Total</th>
+          </tr>
+        </table>
+      </section>
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
@@ -216,18 +221,35 @@
 
       <section class="element">
         <h3>What our company does and offers</h3>
-        <p> Our company is a fictional independant game developement studio. The products it lists are digital video games for sale, with descriptions of their gameplay and features.</p>
+        <p>
+          Our company is a fictional independant game developement studio. The
+          products it lists are digital video games for sale, with descriptions
+          of their gameplay and features.
+        </p>
       </section>
 
       <section class="element">
         <h3>Who our company is to potential customers, as a person.</h3>
-        <p> Our company, to potential customers, can be seen as game designers, programmers, and various artists for all aspects of gampelay, including sound effects, music, visual assets, character designs, and much more. 
-          The company embodies all these people as the unified face of video game projects, and the creators of the customers favourite games.</p>
+        <p>
+          Our company, to potential customers, can be seen as game designers,
+          programmers, and various artists for all aspects of gampelay,
+          including sound effects, music, visual assets, character designs, and
+          much more. The company embodies all these people as the unified face
+          of video game projects, and the creators of the customers favourite
+          games.
+        </p>
       </section>
 
       <section class="element">
-        <h3>Why might our company entice someone to purchase a product or service</h3>
-        <p> Our company will entice gamers to play its games in order to generate revenue and share their artistic creations. The company may promote their games to gamers with an interest to similar video game genres or playstyles. </p>
+        <h3>
+          Why might our company entice someone to purchase a product or service
+        </h3>
+        <p>
+          Our company will entice gamers to play its games in order to generate
+          revenue and share their artistic creations. The company may promote
+          their games to gamers with an interest to similar video game genres or
+          playstyles.
+        </p>
       </section>
     </section>
 
@@ -241,7 +263,6 @@
 
         <h4>Secondary font: Inter Regular</h4>
         <p>Use for body text, captions, and supporting details.</p>
-        
       </section>
 
       <section class="element">
@@ -252,19 +273,19 @@
           <li>Bright Orange: #FF7A00</li>
           <li>Sunny Yellow: #FFD21F</li>
           <li>Cream: #FBF5E6</li>
-
         </ul>
-
       </section>
 
       <section class="element">
         <h3>Imagery & Art Direction</h3>
-        <figure> 
-        <img src="img/image 54.png" alt="Illustration of board game" width="400">
-        <img src="img/image 51.png" alt="Game night invitation" width="400">
+        <figure>
+          <img
+            src="img/image 54.png"
+            alt="Illustration of board game"
+            width="400"
+          />
+          <img src="img/image 51.png" alt="Game night invitation" width="400" />
         </figure>
-
-
       </section>
     </section>
 
@@ -272,13 +293,19 @@
       <h2>Citations</h2>
 
       <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>
+          Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
+          Retrieved from
+          <a
+            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
+            >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
+          >
+        </li>
+        <li>
+          Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
+          from <a href="#">URL</a>.
+        </li>
       </ul>
-
     </section>
-
-
-
   </body>
 </html>
