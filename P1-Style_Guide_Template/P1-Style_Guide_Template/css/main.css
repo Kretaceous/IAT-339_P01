@@ -3,6 +3,7 @@
   Default styling for the style guide 
 */
 body {
+  background-color: #FBF5E6;
   font-family: sans-serif;
   padding: 2rem;
 }
@@ -36,7 +37,8 @@ nav a:hover, nav a:focus {
 }
 
 code {
-  background-color: #EEE;
+  background-color: #5C8DF680; /* '80' at the end means 50% opacity */
+  color: #2036A8;
   padding: 0.5rem;
   display: block;
 }
@@ -51,14 +53,15 @@ code {
   display: inline-block;
   padding: 0.5rem;
   color: white;
-  background-color: rgb(50,50,50);
+  background-color: #FF7A00;
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+  background-color: #FFD21F;
+  scale: 1.05;
 }
 
 
@@ -73,3 +76,16 @@ code {
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+.product-name {
+  color: #FF7A00;
+}
+
+.product-list-item {
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.product-list-item:hover, .product-list-item:focus {
+  scale: 1.05;
+}
