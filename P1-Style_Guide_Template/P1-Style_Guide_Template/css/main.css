@@ -63,19 +63,44 @@ code {
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
+
   color: white;
   background-color: #FF7A00;
+
   text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
   font-family: "Clash Display";
+
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+
+  transition-duration: 0.5s;
+}
+
+.button-nav-alt {
+  display: inline-block;
+  padding: 0.5rem;
+
+  color: white;
+  background-color: #5C8DF6;
+
+  text-decoration: none;
+  font-family: "Clash Display";
+
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+
+  transition-duration: 0.5s;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #FFD21F;
+  /* background-color: #FFD21F; */
   scale: 1.05;
 }
 
+.button-nav-alt:hover, .button-nav-alt:focus {
+  background-color: #2036A8;
+  scale: 1.05;
+}
 
 
 /* 
