@@ -1,0 +1,108 @@
+/* Clash Display */
+@font-face {
+    font-family: 'Clash Display';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Clash Display/ClashDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/Clash Display/ClashDisplay-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/Clash Display/ClashDisplay-Light.otf');
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    font-weight: 200;
+    font-style: normal;
+    src: url('../fonts/Clash Display/ClashDisplay-Extralight.otf');
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    font-weight: 900;
+    font-style: normal;
+    src: url('../fonts/Clash Display/ClashDisplay-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Clash Display/ClashDisplay-Semibold.otf');
+}
+
+
+/* Satoshi */
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/Satoshi/Satoshi-Light.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/Satoshi/Satoshi-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    font-style: italic;
+    src: url('../fonts/Satoshi/Satoshi-Italic.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/Satoshi/Satoshi-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-style: italic;
+    src: url('../fonts/Satoshi/Satoshi-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Satoshi/Satoshi-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 700;
+    font-style: italic;
+    src: url('../fonts/Satoshi/Satoshi-BoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 900;
+    font-style: normal;
+    src: url('../fonts/Satoshi/Satoshi-Black.otf');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    font-weight: 900;
+    font-style: italic;
+    src: url('../fonts/Satoshi/Satoshi-BlackItalic.otf');
+}

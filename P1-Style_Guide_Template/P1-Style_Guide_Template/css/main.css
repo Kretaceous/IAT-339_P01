@@ -4,7 +4,8 @@
 */
 body {
   background-color: #FBF5E6;
-  font-family: sans-serif;
+  font-family: 'Satoshi';
+  font-weight: normal;
   padding: 2rem;
 }
 
@@ -15,12 +16,20 @@ body {
   border-top-color: black;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: "Clash Display";
+  font-weight: bold;
+}
+
+h1 {
+  color: #5C8DF6
+}
+
 h2 {
   margin-top: 6rem;
 }
 
 h3 {
-  font-style: italic;
   margin-top: 1rem;
 }
 
@@ -29,6 +38,8 @@ h4 {
 }
 
 p {
+  font-family: 'Satoshi';
+  font-weight: lighter;
   margin-top: 0;
 }
 
@@ -57,6 +68,7 @@ code {
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
+  font-family: "Clash Display";
 }
 
 .button-nav:hover, .button-nav:focus {
