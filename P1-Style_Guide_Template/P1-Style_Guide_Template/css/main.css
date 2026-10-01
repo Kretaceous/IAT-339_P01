@@ -3,8 +3,8 @@
   Default styling for the style guide 
 */
 body {
-  background-color: #FBF5E6;
-  font-family: 'Satoshi';
+  background-color: #fbf5e6;
+  font-family: "Satoshi";
   font-weight: normal;
   padding: 2rem;
 }
@@ -16,13 +16,18 @@ body {
   border-top-color: black;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Clash Display";
   font-weight: bold;
 }
 
 h1 {
-  color: #5C8DF6
+  color: #5c8df6;
 }
 
 h2 {
@@ -38,22 +43,22 @@ h4 {
 }
 
 p {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-weight: lighter;
   margin-top: 0;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   text-decoration: none;
 }
 
 code {
-  background-color: #5C8DF680; /* '80' at the end means 50% opacity */
-  color: #2036A8;
+  background-color: #5c8df680; /* '80' at the end means 50% opacity */
+  color: #2036a8;
   padding: 0.5rem;
   display: block;
 }
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -65,7 +70,7 @@ code {
   padding: 0.5rem;
 
   color: white;
-  background-color: #FF7A00;
+  background-color: #ff7a00;
 
   text-decoration: none;
   font-family: "Clash Display";
@@ -81,7 +86,7 @@ code {
   padding: 0.5rem;
 
   color: white;
-  background-color: #5C8DF6;
+  background-color: #5c8df6;
 
   text-decoration: none;
   font-family: "Clash Display";
@@ -92,30 +97,28 @@ code {
   transition-duration: 0.5s;
 }
 
-.button-nav:hover, .button-nav:focus {
+.button-nav:hover,
+.button-nav:focus {
   /* background-color: #FFD21F; */
   scale: 1.05;
 }
 
-.button-nav-alt:hover, .button-nav-alt:focus {
-  background-color: #2036A8;
+.button-nav-alt:hover,
+.button-nav-alt:focus {
+  background-color: #2036a8;
   scale: 1.05;
 }
-
 
 /* 
   TEXT ELEMENTS -------------------
 */
-
-
-
 
 /* 
   COMBINED ELEMENTS -------------------
 */
 
 .product-name {
-  color: #FF7A00;
+  color: #ff7a00;
 }
 
 .product-list-item {
@@ -123,6 +126,49 @@ code {
   transition-duration: 0.5s;
 }
 
-.product-list-item:hover, .product-list-item:focus {
+.product-list-item:hover,
+.product-list-item:focus {
   scale: 1.05;
+}
+
+.checkout-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Satoshi";
+}
+
+.checkout-table th {
+  background-color: #5c8df6;
+  color: white;
+  font-family: "Clash Display";
+  padding: 1rem;
+  text-align: left;
+}
+
+.checkout-table td {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.checkout-table img {
+  display: block;
+  width: 80px;
+  margin: 0.5rem auto 0;
+  border-radius: 12px;
+  border: 3px solid #ffd21f;
+}
+
+.checkout-table .game-name {
+  font-family: "Clash Display";
+  color: #ff7a00;
+}
+
+.total-row th {
+  background-color: #ffd21f;
+  color: #2036a8;
 }
