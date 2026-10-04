@@ -206,8 +206,17 @@ label {
   TEXT ELEMENTS -------------------
 */
 
+.satoshi-font {
+  font-family: 'Satoshi';
+  font-weight: bolder;
+  font-size: x-large;
+}
 
-
+.clash-display-font {
+  font-family: 'Clash Display';
+  font-weight: bolder;
+  font-size: x-large;
+}
 
 /* 
   COMBINED ELEMENTS -------------------
