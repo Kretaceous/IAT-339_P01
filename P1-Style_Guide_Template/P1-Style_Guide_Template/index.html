@@ -69,8 +69,12 @@
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
 
-        <input type="submit" name="submit_button" value="Submit" />
-        <input type="reset" name="reset_button" value="Reset" />
+        <input type="submit" class="submit-button" name="submit_button" value="Submit" />
+        <input type="reset" class="reset-button" name="reset_button" value="Reset" />
+
+        <h4>CSS Selector:</h4>
+        <p>.submit-button - style for the submit button </p>
+        <p>.reset-button - style for the reset button </p>
 
         <h4>Sample code:</h4>
         <code>
@@ -88,6 +92,9 @@
           <label>Example Text Input Field</label> <br>
           <input type="text" class="form-input" placeholder="Type here:" />
 
+          <h4>CSS Selector:</h4>
+          <p>.form-input</p>
+
           <h4>Sample code:</h4>
           <code>
             &lt;label &gt;Example Text Input&lt;/label&gt; &lt;br&gt;<br />
@@ -102,12 +109,15 @@
       <section class="element">
         <h3>Radio Button with Label</h3>
 
-        <input type="radio" id="radio_button1" name="radio_button" />
+        <input type="radio" class="radio-button" id="radio_button1" name="radio_button" />
         <label for="radio_button1">Radio Button 1</label>
-        <input type="radio" id="radio_button2" name="radio_button" />
+        <input type="radio" class="radio-button" id="radio_button2" name="radio_button" />
         <label for="radio_button2">Radio Button 2</label>
-        <input type="radio" id="radio_button3" name="radio_button" />
+        <input type="radio" class="radio-button" id="radio_button3" name="radio_button" />
         <label for="radio_button3">Radio Button 3</label>
+
+        <h4>CSS Selector:</h4>
+        <p>.radio-button</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -125,7 +135,7 @@
       <section class="element">
         <h3>Image as a Link</h3>
 
-        <figure>
+        <figure class="image-link">
           <a href="https://www.google.com">
             <img
               src="img/ironoakgameslogo.jpeg"
@@ -133,6 +143,9 @@
             />
           </a>
         </figure>
+
+        <h4>CSS Selector:</h4>
+        <p>.image-link</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -161,6 +174,9 @@
         <h5>Header 3</h5>
         <h6>Header 4</h6>
 
+        <h4>CSS Selector:</h4>
+        <p>h1, h2, h3, h4, h5, h6</p>
+
         <h4>Sample code:</h4>
         <code>
           &lt;h3&gt;Header 1&lt;/h3&gt;<br />
@@ -176,6 +192,9 @@
         <h3>Paragraphs</h3>
         <p>This is a paragraph.</p>
 
+         <h4>CSS Selector:</h4>
+         <p>p</p>
+
         <h4>Sample code:</h4>
         <code> &lt;p&gt;This is a paragraph.&lt;/p&gt; </code>
       </section>
@@ -185,13 +204,16 @@
       <section class="element">
         <h3>Numbered Lists</h3>
 
-        <ol>
+        <ol class="numbered-list">
           <li>Entry 1</li>
           <li>Entry 2</li>
           <li>Entry 3</li>
           <li>Entry 4</li>
           <li>Entry 5</li>
         </ol>
+
+        <h4>CSS Selector:</h4>
+         <p>.numbered-list</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -214,19 +236,24 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
-        
-          <h1>
-            <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
-            Website Title
-          </h1>
-          <nav>      
+
+          <div class="main-nav">
+            <h1>
+              <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
+              Website Title
+            </h1>
+            <nav>      
               <a href="" class="button-nav">Main</a>  
               <a href="" class="button-nav">About</a>
               <a href="" class="button-nav">Recent Titles</a>
               <a href="" class="button-nav">Published Games</a>
               <a href="" class="button-nav">Checkout</a>
               <a href="" class="button-nav">Citations</a>
-          </nav>
+            </nav>
+          </div>
+
+        <h4>CSS Selector:</h4>
+        <p>.main-nav</p>
 
           <h4>Sample code:</h4>
           <code>
@@ -240,6 +267,7 @@
             &lt;/nav&gt; 
           </nav>
           </code>
+          
       </section>
 
       <section class="element">
@@ -257,6 +285,11 @@
         &lt;a class="button-input" href=""&gt;Add To Cart&lt;/a&gt;<br>
         &lt;/div&gt;
         </code>
+
+        <h4>CSS Selector:</h4>
+        <p>.product-list-item</p>
+        <p>.product-name</p>
+        <p>.product-image</p>
 
         <h4>Rendered element:</h4>
         <div style="display: flex; gap: 20px; flex-wrap: wrap;">
@@ -297,6 +330,7 @@
 
         <h4>Rendered element:</h4>
         
+        <div class="payment-form">
         <form method="post" action="#">
         <label >Name: </label> <br>
         <input type="text" class="form-input" placeholder="John Smith">
@@ -338,6 +372,10 @@
         <form method="post" action="#">
         <a class="button-input" href="#">Purchase</a>
         </form>
+        </div>
+
+        <h4>CSS Selector:</h4>
+        <p>.payment-form</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -388,7 +426,7 @@
         <h3>Checkout Cart</h3>
 
         <h4>Rendered element:</h4>
-        <table border="1">
+        <table border="1" class="checkout-cart">
           <tr>
             <th>Game</th>
             <th>Price</th>
@@ -413,6 +451,9 @@
           </tr>
         </table>
       </section>
+
+      <h4>CSS Selector:</h4>
+      <p>.checkout-cart</p>
 
         <h4>Sample code:</h4>
       <pre><code>
