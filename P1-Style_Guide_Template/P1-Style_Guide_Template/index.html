@@ -55,13 +55,13 @@
         </nav>
 
         <h4>CSS selector:</h4>
-        <p>.button-nav</p>
+        <p>.button-input - style for all navigation buttons</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-input"&gt;Default Button&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
+        <a class="button-input" href="#">Default Button</a>
       </section>
 
       <!--Submit/Reset Buttons-->
@@ -69,8 +69,12 @@
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
 
-        <input type="submit" name="submit_button" value="Submit" />
-        <input type="reset" name="reset_button" value="Reset" />
+        <input type="submit" class="submit-button" name="submit_button" value="Submit" />
+        <input type="reset" class="reset-button" name="reset_button" value="Reset" />
+
+        <h4>CSS Selector:</h4>
+        <p>.submit-button - style for the submit button </p>
+        <p>.reset-button - style for the reset button </p>
 
         <h4>Sample code:</h4>
         <code>
@@ -85,13 +89,16 @@
         <h3>Text Input Field with Label</h3>
 
         <form method="post" action="#">
-          <label for="generic_field">Example Text Input Field</label>
-          <input type="text" id="generic_field" placeholder="Type here:" />
+          <label>Example Text Input Field</label> <br>
+          <input type="text" class="form-input" placeholder="Type here:" />
+
+          <h4>CSS Selector:</h4>
+          <p>.form-input</p>
 
           <h4>Sample code:</h4>
           <code>
-            &lt;label for="generic_field"&gt;Example Text Input&lt;/label&gt;<br />
-            &lt;input type="text" id="generic_field" placeholder="Type
+            &lt;label &gt;Example Text Input&lt;/label&gt; &lt;br&gt;<br />
+            &lt;input type="text" class="form-input" placeholder="Type
             here:"&gt;
           </code>
         </form>
@@ -102,21 +109,24 @@
       <section class="element">
         <h3>Radio Button with Label</h3>
 
-        <input type="radio" id="radio_button1" name="radio_button" />
+        <input type="radio" class="radio-button" id="radio_button1" name="radio_button" />
         <label for="radio_button1">Radio Button 1</label>
-        <input type="radio" id="radio_button2" name="radio_button" />
-        <label for="radio_button1">Radio Button 2</label>
-        <input type="radio" id="radio_button3" name="radio_button" />
-        <label for="radio_button1">Radio Button 3</label>
+        <input type="radio" class="radio-button" id="radio_button2" name="radio_button" />
+        <label for="radio_button2">Radio Button 2</label>
+        <input type="radio" class="radio-button" id="radio_button3" name="radio_button" />
+        <label for="radio_button3">Radio Button 3</label>
+
+        <h4>CSS Selector:</h4>
+        <p>.radio-button</p>
 
         <h4>Sample code:</h4>
         <code>
           &lt;input type="radio" id="radio_button1" name="radio_button"&gt;<br>
           &lt;label for="radio_button1"&gt;Radio Button 1&lt;/label&gt;<br>
           &lt;input type="radio" id="radio_button2" name="radio_button"&gt;<br>
-          &lt;label for="radio_button1"&gt;Radio Button 2&lt;/label&gt;<br>
+          &lt;label for="radio_button2"&gt;Radio Button 2&lt;/label&gt;<br>
           &lt;input type="radio" id="radio_button3" name="radio_button"&gt;<br>
-          &lt;label for="radio_button1"&gt;Radio Button 3&lt;/label&gt;
+          &lt;label for="radio_button3"&gt;Radio Button 3&lt;/label&gt;
         </code>
       </section>
 
@@ -125,20 +135,24 @@
       <section class="element">
         <h3>Image as a Link</h3>
 
-        <figure>
+        <figure class="image-link">
           <a href="https://www.google.com">
             <img
+              class="image-link"
               src="img/ironoakgameslogo.jpeg"
               alt="The logo for the game studio Iron Oak Games."
             />
           </a>
         </figure>
 
+        <h4>CSS Selector:</h4>
+        <p>.image-link</p>
+
         <h4>Sample code:</h4>
         <code>
           &lt;figure&gt;<br />
           &emsp;&lt;a href="https://www.google.com"&gt;<br />
-          &emsp;&emsp;&lt;img src="img/ironoakgameslogo.jpeg" alt="The logo for
+          &emsp;&emsp;&lt;img class="image-link" src="img/ironoakgameslogo.jpeg" alt="The logo for
           the game studio Iron Oak Games."&gt;<br />
           &emsp;&lt;/a&gt;<br />
           &lt;/figure&gt;
@@ -161,6 +175,9 @@
         <h5>Header 3</h5>
         <h6>Header 4</h6>
 
+        <h4>CSS Selector:</h4>
+        <p>h1, h2, h3, h4, h5, h6</p>
+
         <h4>Sample code:</h4>
         <code>
           &lt;h3&gt;Header 1&lt;/h3&gt;<br />
@@ -176,6 +193,9 @@
         <h3>Paragraphs</h3>
         <p>This is a paragraph.</p>
 
+         <h4>CSS Selector:</h4>
+         <p>p</p>
+
         <h4>Sample code:</h4>
         <code> &lt;p&gt;This is a paragraph.&lt;/p&gt; </code>
       </section>
@@ -185,13 +205,16 @@
       <section class="element">
         <h3>Numbered Lists</h3>
 
-        <ol>
+        <ol class="numbered-list">
           <li>Entry 1</li>
           <li>Entry 2</li>
           <li>Entry 3</li>
           <li>Entry 4</li>
           <li>Entry 5</li>
         </ol>
+
+        <h4>CSS Selector:</h4>
+         <p>.numbered-list</p>
 
         <h4>Sample code:</h4>
         <code>
@@ -214,32 +237,38 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
-        
-          <h1>
-            <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
-            Website Title
-          </h1>
-          <nav>      
-              <a href="" class="button-nav-alt">Main</a>  
-              <a href="" class="button-nav-alt">About</a>
-              <a href="" class="button-nav-alt">Recent Titles</a>
-              <a href="" class="button-nav-alt">Published Games</a>
-              <a href="" class="button-nav-alt">Checkout</a>
-              <a href="" class="button-nav-alt">Citations</a>
-          </nav>
+
+          <div class="main-nav">
+            <h1>
+              <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
+              Website Title
+            </h1>
+            <nav>      
+              <a href="" class="button-nav">Main</a>  
+              <a href="" class="button-nav">About</a>
+              <a href="" class="button-nav">Recent Titles</a>
+              <a href="" class="button-nav">Published Games</a>
+              <a href="" class="button-nav">Checkout</a>
+              <a href="" class="button-nav">Citations</a>
+            </nav>
+          </div>
+
+        <h4>CSS Selector:</h4>
+        <p>.main-nav</p>
 
           <h4>Sample code:</h4>
           <code>
             &lt;nav&gt;<br> 
-              &lt;a href="" class="button-nav-alt"&gt;Main&lt;/a&gt;<br>
-              &lt;a href="" class="button-nav-alt"&gt;About&lt;/a&gt;<br>
-              &lt;a href="" class="button-nav-alt"&gt;Recent Titles&lt;/a&gt;<br>
-              &lt;a href="" class="button-nav-alt"&gt;Published Games&lt;/a&gt;<br>
-              &lt;a href="" class="button-nav-alt"&gt;Checkout&lt;/a&gt;<br>
-              &lt;a href="" class="button-nav-alt"&gt;Citations&lt;/a&gt;<br>
+              &lt;a href="" class="button-nav"&gt;Main&lt;/a&gt;<br>
+              &lt;a href="" class="button-nav"&gt;About&lt;/a&gt;<br>
+              &lt;a href="" class="button-nav"&gt;Recent Titles&lt;/a&gt;<br>
+              &lt;a href="" class="button-nav"&gt;Published Games&lt;/a&gt;<br>
+              &lt;a href="" class="button-nav"&gt;Checkout&lt;/a&gt;<br>
+              &lt;a href="" class="button-nav"&gt;Citations&lt;/a&gt;<br>
             &lt;/nav&gt; 
           </nav>
           </code>
+          
       </section>
 
       <section class="element">
@@ -253,21 +282,26 @@
           &lt;img class="product-image" src="img/BirdGame1.png" alt="Video game cover image" width="300" height="300"&gt;
         &lt;/a&gt;<br>
         &lt;h4&gt;CAD $9.99&lt;/h4&gt;<br>
-        &lt;p style="max-width: 300px;"&gt;Take to the skies in the original pioneer of the Bird Game series! &lt;/p&gt;<br>
-        &lt;a class="button-nav" href=""&gt;Add To Cart&lt;/a&gt;<br>
+        &lt;p class="product-list-description"&gt;Take to the skies in the original pioneer of the Bird Game series! &lt;/p&gt;<br>
+        &lt;a class="button-input" href=""&gt;Add To Cart&lt;/a&gt;<br>
         &lt;/div&gt;
         </code>
 
+        <h4>CSS Selector:</h4>
+        <p>.product-list-item</p>
+        <p>.product-name</p>
+        <p>.product-image</p>
+
         <h4>Rendered element:</h4>
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="product-list-flexbox">
           <div>
           <section class="product-list-item" href="">
           <h2 class="product-name">Bird Game: <br> Wacky Wings</h2>
             <img class="product-image" src="img/BirdGame1.png" alt="Video game cover image" width="300" height="300">
           </section>
           <h4>CAD $9.99</h4>
-          <p style="max-width: 300px;">Take to the skies in the original pioneer of the Bird Game series! Fly your way through enemies, gather sticks to build your nest, and hunt worms in this casual, yet rediculously fun adventure! </p>
-          <a class="button-nav" href="">Add To Cart</a>
+          <p class="product-list-description">Take to the skies in the original pioneer of the Bird Game series! Fly your way through enemies, gather sticks to build your nest, and hunt worms in this casual, yet rediculously fun adventure! </p>
+          <a class="button-input" href="">Add To Cart</a>
           </div>
 
           <div>
@@ -276,8 +310,8 @@
             <img class="product-image" src="img/BirdGame2.png" alt="Video game cover image" width="300" height="300">
           </section>
           <h4>CAD $14.99</h4>
-          <p style="max-width: 300px;">Return to the skies as your favourite bird or continue your flying adventure with friends with the new multiplayer mode! Featuring a ton of new content, including an expanded story and game world! </p>
-          <a class="button-nav" href="">Add To Cart</a>
+          <p class="product-list-description">Return to the skies as your favourite bird or continue your flying adventure with friends with the new multiplayer mode! Featuring a ton of new content, including an expanded story and game world! </p>
+          <a class="button-input" href="">Add To Cart</a>
           </div>
 
           <div>
@@ -286,8 +320,8 @@
             <img class="product-image" src="img/BirdGame3.png" alt="Video game cover image" width="300" height="300">
           </section>
           <h4>CAD $12.99</h4>
-          <p style="max-width: 300px;"> The epic conclusion to the Bird Game series! Soar as your favourite bird one last time to put an end to the evil forces! Also featuring a new Arcade Mode with loads of casual fun for the perfect pastime! </p>
-          <a class="button-nav" href="">Add To Cart</a>
+          <p class="product-list-description"> The epic conclusion to the Bird Game series! Soar as your favourite bird one last time to put an end to the evil forces! Also featuring a new Arcade Mode with loads of casual fun for the perfect pastime! </p>
+          <a class="button-input" href="">Add To Cart</a>
           </div>
         </div>
       </section>
@@ -296,103 +330,96 @@
         <h3>Payment Form</h3>
 
         <h4>Rendered element:</h4>
-        <h5>
-          <form method="post" action="#">
-          <label for="generic_field">Name: </label>
-          <input type="text" id="generic_field" placeholder="John Smith">
-          </form>
-        </h5>
-         
-        <h5>
-          <form method="post" action="#">
-          <label for="generic_field">Address: </label>
-          <input type="text" id="generic_field" placeholder="Unit 1, 123 Street">
-          </form>
-        </h5>
+        
+        <div class="payment-form">
+        <form method="post" action="#">
+        <label >Name: </label> <br>
+        <input type="text" class="form-input" placeholder="John Smith">
+        </form>
+      
+        <form method="post" action="#">
+        <label>Address: </label> <br>
+        <input type="text" class="form-input" placeholder="Unit 1, 123 Street">
+        </form>
+      
+        <form method="post" action="#">
+        <label>Payment Type: </label> <br>
+        <input type="radio" name="radio_button">
+        <label>Credit</label>
+        <input type="radio" name="radio_button">
+        <label>Debit</label>
+        </form>
+      
+        <form method="post" action="#">
+        <label>Card Number: </label> <br>
+        <input type="text" class="form-input" placeholder="000 000 000 0000">
+        </form>
+      
+        <form method="post" action="#">
+        <label>ZIP: </label> <br>
+        <input type="text" class="form-input" placeholder="123 ABC">
+        </form>
+      
+        
+        <form method="post" action="#">
+        <label> Do you consent to user terms and agreements? </label> <br>
+        <input type="radio" name="radio_button">
+        <label>Yes</label>
+        <input type="radio" name="radio_button">
+        <label>No</label>
+        </form>
+        
+        
+        <form method="post" action="#">
+        <a class="button-input" href="#">Purchase</a>
+        </form>
+        </div>
 
-        <h5>
-          Payment Type:
-          <input type="radio" id="radio_button1" name="radio_button">
-          <label for="radio_button1">Credit</label>
-          <input type="radio" id="radio_button2" name="radio_button">
-          <label for="radio_button1">Debit</label>
-        </h5>
-        
-        <h5>
-          <form method="post" action="#">
-          <label for="generic_field">Card Number: </label>
-          <input type="text" id="generic_field" placeholder="000 000 000 0000">
-          </form>
-        </h5>
-
-        <h5>
-          <form method="post" action="#">
-          <label for="generic_field">ZIP: </label>
-          <input type="text" id="generic_field" placeholder="123 ABC">
-          </form>
-        </h5>
-        
-        <p>
-          Do you consent to user terms and agreements?
-          <input type="radio" id="radio_button1" name="radio_button">
-          <label for="radio_button1">Yes</label>
-          <input type="radio" id="radio_button2" name="radio_button">
-          <label for="radio_button1">No</label>
-        </p>
-        
-        <a class="button-nav" href="#">Purchase</a>
+        <h4>CSS Selector:</h4>
+        <p>.payment-form</p>
 
         <h4>Sample code:</h4>
-          <code>
-            &lt;h5&gt;<br> 
-              &lt;form method="post" action="#"<br>
-              &lt;label for="generic_field"&gt;Name: &lt;/label&gt;<br>
-              &lt;input type="text" id="generic_field" placeholder="Enter"&gt; <br>
-              &lt;/form&lt;<br>
-            &lt;/h5&gt;<br> 
-            <br>
-            &lt;h5&gt; 
-              &lt;form method="post" action="#"<br>
-              &lt;label for="generic_field"&gt;Address: &lt;/label&gt;<br>
-              &lt;input type="text" id="generic_field" placeholder="Enter"&gt; <br>
-              &lt;/form&lt;<br>
-            &lt;/h5&gt;<br>
-            <br>
-            &lt;h5&gt;<br> 
-              Payment Type: 
-              &lt;input type="radio" id="radio_button1" name="radio_button"&gt;<br>
-              &lt;label for="radio_button1"&gt;Credit&lt;/label&gt;<br>
-              &lt;input type="radio" id="radio_button2" name="radio_button"&gt; <br>
-              &lt;label for="radio_button1"&gt;Debit&lt;/label&gt;<br>
-              &lt;/form&lt;<br>
-            &lt;/h5&gt;<br> 
-            <br>
-            &lt;h5&gt;<br> 
-              &lt;form method="post" action="#"<br>
-              &lt;label for="generic_field"&gt;Card Number&lt;/label&gt;<br>
-              &lt;input type="text" id="generic_field" placeholder="Enter"&gt; <br>
-              &lt;/form&lt;<br>
-            &lt;/h5&gt;<br> 
-            <br>
-            &lt;h5&gt;<br> 
-              &lt;form method="post" action="#"<br>
-              &lt;label for="generic_field"&gt;Zip&lt;/label&gt;<br>
-              &lt;input type="text" id="generic_field" placeholder="Enter"&gt; <br>
-              &lt;/form&lt; <br>
-            &lt;/h5&gt; 
-            <br>
-            &lt;p&gt;<br> 
-              Do you consent to user terms and agreements?<br> 
-              &lt;input type="radio" id="radio_button1" name="radio_button"&gt;<br>
-              &lt;label for="radio_button1"&gt;Credit&lt;/label&gt;<br>
-              &lt;input type="radio" id="radio_button2" name="radio_button"&gt; <br>
-              &lt;label for="radio_button1"&gt;Debit&lt;/label&gt;<br>
-              &lt;/form&lt; <br>
-            &lt;/p&gt; <br> 
-            <br>
-            &lt;a href="#" class="button"&gt;Purchase&lt;/a&gt;  
-          </code>
-            
+        <code>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;label&gt; Name: &lt;/label&gt;  &lt;br&gt; <br>
+          &lt;input type="text" class="form-input" placeholder="John Smith"&gt; <br>
+          &lt;/form&gt; <br>
+        <br>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;label&gt; Address: &lt;/label&gt;  &lt;br&gt; <br>
+          &lt;input type="text" class="form-input" placeholder="Unit 1, 123 Street"&gt; <br>
+          &lt;/form&gt; <br>
+        <br>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;label&gt; Payment Type: &lt;/label&gt;  &lt;br&gt; <br>
+          &lt;input type="radio" name="radio_button"&gt; <br>
+          &lt;label&gt; Credit&lt;/label&gt; <br>
+          &lt;input type="radio" name="radio_button"&gt; <br>
+          &lt;label&gt; Debit&lt;/label&gt; <br>
+          &lt;/form&gt; <br>
+        <br>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;label&gt; Card Number: &lt;/label&gt;  &lt;br&gt; <br>
+          &lt;input type="text" class="form-input" placeholder="000 000 000 0000"&gt;<br> 
+          &lt;/form&gt; <br>
+        <br>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;label&gt; ZIP: &lt;/label&gt;  &lt;br&gt; <br>
+          &lt;input type="text" class="form-input" placeholder="123 ABC"&gt; <br>
+          &lt;/form&gt; <br>
+        <br>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;label&gt;  Do you consent to user terms and agreements? &lt;/label&gt;  &lt;br&gt; <br>
+          &lt;input type="radio" name="radio_button"&gt; <br>
+          &lt;label&gt; Yes&lt;/label&gt; <br>
+          &lt;input type="radio" name="radio_button"&gt; <br>
+          &lt;label&gt; No&lt;/label&gt; <br>
+          &lt;/form&gt; <br>
+        <br>
+          &lt;form method="post" action="#"&gt; <br>
+          &lt;a class="button-input" href="#"&gt; Purchase&lt;/a&gt; <br>
+          &lt;/form&gt; <br>
+        </code>
 
       </section>
 
@@ -433,6 +460,9 @@
 
         <a class="button-nav" : href="#">Checkout</a>
       </section>
+
+      <h4>CSS Selector:</h4>
+      <p>.checkout-cart</p>
 
         <h4>Sample code:</h4>
       <pre><code>
@@ -517,25 +547,19 @@
 
       <section class="element">
         <h3>Fonts</h3>
-        <h4>Primary font: Clash Display</h4>
-        <p>Legible, fun. clear, big, and playful. but still forword leaning.</p>
-          Works as a loud voice of the brand for headlines, logo, section
-          headings and callouts
-          It reads confidently at large sizes without losing personality, which
-          fits a games brands that wants to feel alive other the edgy corporte
-          feel.
-        </p>
+        <h3 class="clash-display-font">Primary Font - Clash Display</h3>
+        <p>Legible, fun. clear, big, and playful. but still forword leaning. <br>Works as a loud voice of the brand for headlines, logo, section headings and callouts It reads confidently at large sizes without losing personality, which fits a games brands that wants to feel alive other the edgy corporte feel.</p>
 
-        <h4>Secondary font: Satoshi</h4>
-        <p>Calmer and highly legible.</p>
-        <p>
+        <p class="satoshi-font">Body Text - Satoshi</p>
+
+        <p>Calmer and highly legible. <br>
           Used for parts of ther site where analyse the product desciptions,
           summaries, checkout and footer text.
           Keeps the site welcoming, trustworthy and easy to browse. Not
-          overwhelming the users
-        </p>
-
-        <h4>Font Pairings</h4>
+          overwhelming the users</p>
+        
+        <br>
+        <h3>Font Pairings</h3>
         <p>
           Clash Display is able to have fun and be bold, while Satoshi sits back
           and explains. Providing the balance we look for in the website we

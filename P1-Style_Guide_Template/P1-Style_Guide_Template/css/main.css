@@ -64,8 +64,8 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
-/* Styling for the navigation button */
-.button-nav {
+/* Styling for the input buttons */
+.button-input {
   display: inline-block;
   padding: 0.5rem;
 
@@ -81,7 +81,18 @@ code {
   transition-duration: 0.5s;
 }
 
-.button-nav-alt {
+.button-input:hover, .button-input:focus, .submit-button:hover, .submit-button:focus, .reset-button:hover, .reset-button:focus {
+  color: white;
+  /* background-color: #FFD21F; */
+  scale: 1.05;
+}
+
+.button-input:active,  .submit-button:active, .reset-button:active, .button-nav:active {
+  filter: brightness(0.75);
+}
+
+/* Styling for the navigation buttons */
+.button-nav {
   display: inline-block;
   padding: 0.5rem;
 
@@ -92,7 +103,7 @@ code {
   font-family: "Clash Display";
 
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* horizontal offset | vertical offset | blur radius | color */
 
   transition-duration: 0.5s;
 }
@@ -107,6 +118,19 @@ code {
 .button-nav-alt:focus {
   background-color: #2036a8;
   scale: 1.05;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition-duration: 0.25s;
+}
+
+/* Text Inputs */
+.form-input {
+  font-family: 'Satoshi';
+  background-color: #5C8DF6;
+  border: 2px solid #2036A8;
+  margin-top: 0.5rem;
+  transition-duration: 0.5s;
+  /* height: 5rem;
+  width: 50rem; */
 }
 
 /* 
@@ -121,9 +145,20 @@ code {
   color: #ff7a00;
 }
 
+.product-list-flexbox {
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap;
+}
+
+.product-list-description {
+  max-width: 20rem;
+}
+
 .product-list-item {
   text-decoration: none;
   transition-duration: 0.5s;
+  max-width: 20rem;
 }
 
 .product-list-item:hover,
