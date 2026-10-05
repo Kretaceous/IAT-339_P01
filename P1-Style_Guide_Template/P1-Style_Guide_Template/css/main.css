@@ -94,10 +94,14 @@ code {
   transition-duration: 0.5s;
 }
 
-.button-input:hover, .button-input:focus {
+.button-input:hover, .button-input:focus, .submit-button:hover, .submit-button:focus, .reset-button:hover, .reset-button:focus {
   color: white;
   /* background-color: #FFD21F; */
   scale: 1.05;
+}
+
+.button-input:active,  .submit-button:active, .reset-button:active, .button-nav:active {
+  filter: brightness(0.75);
 }
 
 /* Styling for the navigation buttons */
@@ -120,6 +124,57 @@ code {
 .button-nav:hover, .button-nav:focus {
   color: white;
   background-color: #2036A8;
+  scale: 1.05;
+}
+
+/* Submit Button */
+.submit-button {
+  display: inline-block;
+  padding: 0.5rem;
+
+  color: white;
+  background-color: #92bb2c;
+
+  text-decoration: none;
+  font-family: "Clash Display";
+
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+
+  transition-duration: 0.5s;
+
+  border: none;
+  outline: none;
+}
+
+/* Reset Button */
+.reset-button {
+  display: inline-block;
+  padding: 0.5rem;
+
+  color: white;
+  background-color: #c5551c;
+
+  text-decoration: none;
+  font-family: "Clash Display";
+
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+
+  transition-duration: 0.5s;
+
+  border: none;
+  outline: none;
+}
+
+/* Image Link */
+.image-link {
+  transition-duration: 0.5s;
+  object-fit: cover;
+  object-position: center; 
+}
+
+.image-link:hover, .image-link:focus {
   scale: 1.05;
 }
 
@@ -226,9 +281,20 @@ label {
   color: #FF7A00;
 }
 
+.product-list-flexbox {
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap;
+}
+
+.product-list-description {
+  max-width: 20rem;
+}
+
 .product-list-item {
   text-decoration: none;
   transition-duration: 0.5s;
+  max-width: 20rem;
 }
 
 .product-list-item:hover, .product-list-item:focus {
