@@ -214,10 +214,10 @@ code {
 
 .checkout-table img {
   display: block;
-  width: 80px;
+  width: 8em;
   margin: 0.5rem auto 0;
-  border-radius: 12px;
-  border: 3px solid #ffd21f;
+  border-radius: 1em;
+  border: 0.2em solid #ffd21f;
 }
 .total-row th {
   background-color: #ffd21f;
