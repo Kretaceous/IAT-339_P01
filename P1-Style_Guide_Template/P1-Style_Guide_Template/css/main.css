@@ -3,8 +3,8 @@
   Default styling for the style guide 
 */
 body {
-  background-color: #FBF5E6;
-  font-family: 'Satoshi';
+  background-color: #fbf5e6;
+  font-family: "Satoshi";
   font-weight: normal;
   padding: 2rem;
 }
@@ -16,13 +16,18 @@ body {
   border-top-color: black;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Clash Display";
   font-weight: bold;
 }
 
 h1 {
-  color: #5C8DF6
+  color: #5c8df6;
 }
 
 h2 {
@@ -38,40 +43,22 @@ h4 {
 }
 
 p {
-  font-family: 'Satoshi';
+  font-family: "Satoshi";
   font-weight: lighter;
   margin-top: 0;
 }
 
-
-/* In-text links */
-p a {
-  color: #5C8DF6;
-  transition-duration: 0.5s;
-}
-
-p a:hover, p a:focus {
-  color: #FF7A00;
-  text-decoration: none;
-}
-
-nav a {
-  color: #5C8DF6;
-  transition-duration: 0.5s;
-}
-
-nav a:hover, nav a:focus {
-  color: #FF7A00;
+nav a:hover,
+nav a:focus {
   text-decoration: none;
 }
 
 code {
-  background-color: #5C8DF680; /* '80' at the end means 50% opacity */
-  color: #2036A8;
+  background-color: #5c8df680; /* '80' at the end means 50% opacity */
+  color: #2036a8;
   padding: 0.5rem;
   display: block;
 }
-
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -83,7 +70,7 @@ code {
   padding: 0.5rem;
 
   color: white;
-  background-color: #FF7A00;
+  background-color: #ff7a00;
 
   text-decoration: none;
   font-family: "Clash Display";
@@ -110,7 +97,7 @@ code {
   padding: 0.5rem;
 
   color: white;
-  background-color: #5C8DF6;
+  background-color: #5c8df6;
 
   text-decoration: none;
   font-family: "Clash Display";
@@ -121,98 +108,15 @@ code {
   transition-duration: 0.5s;
 }
 
-.button-nav:hover, .button-nav:focus {
-  color: white;
-  background-color: #2036A8;
+.button-nav:hover,
+.button-nav:focus {
+  /* background-color: #FFD21F; */
   scale: 1.05;
 }
 
-/* Submit Button */
-.submit-button {
-  display: inline-block;
-  padding: 0.5rem;
-
-  color: white;
-  background-color: #92bb2c;
-
-  text-decoration: none;
-  font-family: "Clash Display";
-
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
-
-  transition-duration: 0.5s;
-
-  border: none;
-  outline: none;
-}
-
-/* Reset Button */
-.reset-button {
-  display: inline-block;
-  padding: 0.5rem;
-
-  color: white;
-  background-color: #c5551c;
-
-  text-decoration: none;
-  font-family: "Clash Display";
-
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
-
-  transition-duration: 0.5s;
-
-  border: none;
-  outline: none;
-}
-
-/* Image Link */
-.image-link {
-  transition-duration: 0.5s;
-  object-fit: cover;
-  object-position: center; 
-}
-
-.image-link:hover, .image-link:focus {
-  scale: 1.05;
-}
-
-
-/* Form Stuff */
-form {
-  /* margin-top: 0.25rem; */
-  padding: .5rem;
-}
-
-/* Radio Inputs: */
-
-/* This forum was used for reference on chaning the appearance of radio buttons: 
-https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons */
-input[type='radio']:after {
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
-  top: -2px;
-  left: -1px;
-  position: relative;
-  background-color: #5C8DF6;
-  content: '';
-  display: inline-block;
-  visibility: visible;
-  border: 2px solid #2036A8;
-  place-content: center;
-  vertical-align: middle;
-  transition-duration: 0.25s;
-}
-
-input[type='radio']:checked:after {
-  position: relative;
-  background-color: #FFD21F;
-  border: 2px solid #FF7A00;
-}
-
-input[type="radio"]:not(:disabled):hover {
+.button-nav-alt:hover,
+.button-nav-alt:focus {
+  background-color: #2036a8;
   scale: 1.05;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   transition-duration: 0.25s;
@@ -229,56 +133,16 @@ input[type="radio"]:not(:disabled):hover {
   width: 50rem; */
 }
 
-.form-input:active, .form-input:hover, .form-input:focus {
-  outline: none;
-  background-color: #FFD21F;
-  border: 2px solid #FF7A00;
-	color: black; 
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25);
-}
-
-/* To learn how to edit the style of placeholder text in an input text area, I referred to this online forum:
-https://stackoverflow.com/questions/43793639/change-placeholder-text-color-of-textarea */
-.form-input::placeholder { 
-	color: white; 
-}
-
-/* To learn how to edit the style a textarea when inputted, I referred to this online documentation:
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:placeholder-shown */
-.form-input:not(:placeholder-shown) {
-  border: 2px solid #FF7A00;
-  background-color: #FFD21F;
-	color: black; 
-  transition-duration: 0.5s;
-}
-
-label {
-  font-weight: bold;
-	color: #5C8DF6;
-}
-
 /* 
   TEXT ELEMENTS -------------------
 */
-
-.satoshi-font {
-  font-family: 'Satoshi';
-  font-weight: bolder;
-  font-size: x-large;
-}
-
-.clash-display-font {
-  font-family: 'Clash Display';
-  font-weight: bolder;
-  font-size: x-large;
-}
 
 /* 
   COMBINED ELEMENTS -------------------
 */
 
 .product-name {
-  color: #FF7A00;
+  color: #ff7a00;
 }
 
 .product-list-flexbox {
@@ -297,6 +161,53 @@ label {
   max-width: 20rem;
 }
 
-.product-list-item:hover, .product-list-item:focus {
+.product-list-item:hover,
+.product-list-item:focus {
   scale: 1.05;
+}
+
+.checkout-table {
+  border: 3px solid #ff7a00;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Satoshi";
+  margin-bottom: 1.5rem;
+}
+
+.game-cell {
+  text-align: center;
+}
+
+.game-name {
+  display: block;
+  font-family: "Clash Display";
+  color: #ff7a00;
+  font-weight: bold;
+}
+
+.checkout-table th {
+  background-color: #5c8df6;
+  color: white;
+  font-family: "Clash Display";
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1;
+}
+
+.checkout-table td {
+  position: relative;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.checkout-table img {
+  display: block;
+  width: 80px;
+  margin: 0.5rem auto 0;
+  border-radius: 12px;
+  border: 3px solid #ffd21f;
 }
