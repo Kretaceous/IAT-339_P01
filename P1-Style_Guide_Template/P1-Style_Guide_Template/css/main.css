@@ -81,13 +81,21 @@ code {
   transition-duration: 0.5s;
 }
 
-.button-input:hover, .button-input:focus, .submit-button:hover, .submit-button:focus, .reset-button:hover, .reset-button:focus {
+.button-input:hover,
+.button-input:focus,
+.submit-button:hover,
+.submit-button:focus,
+.reset-button:hover,
+.reset-button:focus {
   color: white;
   /* background-color: #FFD21F; */
   scale: 1.05;
 }
 
-.button-input:active,  .submit-button:active, .reset-button:active, .button-nav:active {
+.button-input:active,
+.submit-button:active,
+.reset-button:active,
+.button-nav:active {
   filter: brightness(0.75);
 }
 
@@ -124,9 +132,9 @@ code {
 
 /* Text Inputs */
 .form-input {
-  font-family: 'Satoshi';
-  background-color: #5C8DF6;
-  border: 2px solid #2036A8;
+  font-family: "Satoshi";
+  background-color: #5c8df6;
+  border: 2px solid #2036a8;
   margin-top: 0.5rem;
   transition-duration: 0.5s;
   /* height: 5rem;
@@ -146,8 +154,8 @@ code {
 }
 
 .product-list-flexbox {
-  display: flex; 
-  gap: 20px; 
+  display: flex;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -210,4 +218,8 @@ code {
   margin: 0.5rem auto 0;
   border-radius: 12px;
   border: 3px solid #ffd21f;
+}
+.total-row th {
+  background-color: #ffd21f;
+  color: #2036a8;
 }
