@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Checkout - Group 13's Style Guide</title>
+
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <link href="css/fonts.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+        <div class="main-nav">
+            <h1>
+              <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
+              Group 13's Style Guide
+            </h1>
+            <nav>      
+              <a href="" class="button-nav">Main</a>  
+              <a href="" class="button-nav">About</a>
+              <a href="" class="button-nav">Recent Titles</a>
+              <a href="" class="button-nav">Published Games</a>
+              <a href="" class="button-nav">Checkout</a>
+              <a href="" class="button-nav">Citations</a>
+            </nav>
+            <br>
+          </div> 
+ 
+    </header>
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+    
+    <h3>Checkout</h3>
+    <section class="element">
+        <br>
+        <table class="checkout-table">
+          <tr>
+            <th>Game</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Item Total</th>
+          </tr>
+          <tr>
+            <td class="game-cell">
+              <span class="game-name">Bird Game: Wacky Wings</span> 
+              <img src="./img/BirdGame1.png" alt="MSpaint_BirdGame1_thumbnail">           
+            </td>
+            <td>$9.99</td>
+            <td>1</td>
+            <td>$9.99</td>
+          </tr>
+          <tr>
+            <td class="game-cell">
+              <span class="game-name">Bird Game 2: Bird's Return</span>
+              <img src="./img/BirdGame2.png" alt="MSpaint_BirdGame1_thumbnail">
+            </td>
+            <td>$14.99</td>
+            <td>1</td>
+            <td>$14.99</td>
+          </tr>
+          <tr class="total-row">
+            <th colspan="3">Total</th>
+            <th>$24.98</th>
+          </tr>
+        </table>
+    </section>
+
+    <h3>Payment</h3>
+    <section class="element">
+        <br>
+        <div class="payment-form">
+            <form method="post" action="#">
+            <label >Name: </label> <br>
+            <input type="text" class="form-input" placeholder="John Smith">
+            </form>
+      
+            <form method="post" action="#">
+            <label>Address: </label> <br>
+            <input type="text" class="form-input" placeholder="Unit 1, 123 Street">
+            </form>
+      
+            <form method="post" action="#">
+            <label>Payment Type: </label> <br>
+            <input type="radio" name="radio_button">
+            <label>Credit</label>
+            <input type="radio" name="radio_button">
+            <label>Debit</label>
+            </form>
+      
+            <form method="post" action="#">
+            <label>Card Number: </label> <br>
+            <input type="text" class="form-input" placeholder="000 000 000 0000">
+            </form>
+      
+            <form method="post" action="#">
+            <label>ZIP: </label> <br>
+            <input type="text" class="form-input" placeholder="123 ABC">
+            </form>
+      
+        
+            <form method="post" action="#">
+            <label> Do you consent to user terms and agreements? </label> <br>
+            <input type="radio" name="radio_button">
+            <label>Yes</label>
+            <input type="radio" name="radio_button">
+            <label>No</label>
+            </form>
+        
+        
+            <form method="post" action="#">
+            <a class="button-input" href="#">Purchase</a>
+            </form>
+        </div>
+
+      </section>
+  </body>
+</html>
