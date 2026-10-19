@@ -147,7 +147,7 @@ code {
   padding: 0.5rem;
 
   color: white;
-  background-color: #92bb2c;
+  background-color: #ff7a00;
 
   text-decoration: none;
   font-family: "Clash Display";
@@ -167,7 +167,7 @@ code {
   padding: 0.5rem;
 
   color: white;
-  background-color: #c5551c;
+  background-color: #5c8df6;
 
   text-decoration: none;
   font-family: "Clash Display";
@@ -250,6 +250,7 @@ input[type="radio"]:not(:disabled):hover {
   margin-top: 0.5rem;
   transition-duration: 0.5s;
   width: 20rem;
+  border-radius: 0.5rem;
 }
 
 .form-input:active, .form-input:hover, .form-input:focus {
@@ -291,11 +292,23 @@ label {
 */
 
 .main-nav {
-  background-image: url("/P1-Style_Guide_Template/img/CompanyLogo.png")
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-image: 
+  linear-gradient(to right, rgba(251, 245, 230,1) 33%,
+              rgba(0,0,0,0)),
+    url("../img/SkyBanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .product-name {
   color: #ff7a00;
+}
+
+.product-image {
+  border-radius: 1em;
+  border: 0.2em solid #ffd21f;
 }
 
 .product-list-flexbox {
