@@ -9,31 +9,77 @@
   </head>
 
   <body>
+    <!-- NAV -->
     <header>
-        <div class="main-nav">
-            <h1>
-              <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
-              Group 13's Style Guide
-            </h1>
-            <nav>      
-              <a href="" class="button-nav">Main</a>  
-              <a href="" class="button-nav">About</a>
-              <a href="" class="button-nav">Recent Titles</a>
-              <a href="" class="button-nav">Published Games</a>
-              <a href="" class="button-nav">Checkout</a>
-              <a href="" class="button-nav">Citations</a>
-            </nav>
-            <br>
-          </div> 
- 
+      <div class="main-nav">
+        <h1>
+          <!-- **TO CHANGE HERO IMAGE TO AN ACTUAL HERO IMAGE -->
+          <img src="img/CompanyLogo.png" alt="Company Logo" />
+          Company Name
+        </h1>
+        <nav>
+          <a href="index.html" class="button-nav"> Style Guide</a>
+          <a href="product-listing.html" class="button-nav">Our Games</a>
+          <!-- **TO ADD CHECKOUT FILE LINK and citations link  -->
+          <a href="checkout.html" class="button-nav">Checkout</a>
+          <a href="index.html#citations" class="button-nav">Citations</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+    <!-- Checkout Cart and Payment Section // -->
+    <section id="checkout-and-payment-section" class="flex-container">
+
+      <section class="half-screen-element">
+        <h3>Payment</h3>
+        <div class="payment-form">
+          <form method="post" action="#">
+          <label >Name: </label> <br>
+          <input type="text" class="form-input" placeholder="John Smith">
+          </form>
     
-    <h3>Checkout</h3>
-    <section class="element">
-        <br>
+          <form method="post" action="#">
+          <label>Address: </label> <br>
+          <input type="text" class="form-input" placeholder="Unit 1, 123 Street">
+          </form>
+    
+          <form method="post" action="#">
+          <label>Payment Type: </label> <br>
+          <input type="radio" name="radio_button">
+          <label>Credit</label>
+          <input type="radio" name="radio_button">
+          <label>Debit</label>
+          </form>
+    
+          <form method="post" action="#">
+          <label>Card Number: </label> <br>
+          <input type="text" class="form-input" placeholder="000 000 000 0000">
+          </form>
+    
+          <form method="post" action="#">
+          <label>ZIP: </label> <br>
+          <input type="text" class="form-input" placeholder="123 ABC">
+          </form>
+    
+      
+          <form method="post" action="#">
+          <label> Do you consent to user terms and agreements? </label> <br>
+          <input type="radio" name="radio_button">
+          <label>Yes</label>
+          <input type="radio" name="radio_button">
+          <label>No</label>
+          </form>
+      
+          <form method="post" action="#">
+          <h3>
+            <a class="button-input" href="#">Purchase</a>
+          </h3>
+          </form>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>My Cart</h3>
         <table class="checkout-table">
           <tr>
             <th>Game</th>
@@ -64,55 +110,9 @@
             <th>$24.98</th>
           </tr>
         </table>
-    </section>
-
-    <h3>Payment</h3>
-    <section class="element">
-        <br>
-        <div class="payment-form">
-            <form method="post" action="#">
-            <label >Name: </label> <br>
-            <input type="text" class="form-input" placeholder="John Smith">
-            </form>
-      
-            <form method="post" action="#">
-            <label>Address: </label> <br>
-            <input type="text" class="form-input" placeholder="Unit 1, 123 Street">
-            </form>
-      
-            <form method="post" action="#">
-            <label>Payment Type: </label> <br>
-            <input type="radio" name="radio_button">
-            <label>Credit</label>
-            <input type="radio" name="radio_button">
-            <label>Debit</label>
-            </form>
-      
-            <form method="post" action="#">
-            <label>Card Number: </label> <br>
-            <input type="text" class="form-input" placeholder="000 000 000 0000">
-            </form>
-      
-            <form method="post" action="#">
-            <label>ZIP: </label> <br>
-            <input type="text" class="form-input" placeholder="123 ABC">
-            </form>
-      
-        
-            <form method="post" action="#">
-            <label> Do you consent to user terms and agreements? </label> <br>
-            <input type="radio" name="radio_button">
-            <label>Yes</label>
-            <input type="radio" name="radio_button">
-            <label>No</label>
-            </form>
-        
-        
-            <form method="post" action="#">
-            <a class="button-input" href="#">Purchase</a>
-            </form>
-        </div>
 
       </section>
+
+    </section>
   </body>
 </html>

@@ -17,7 +17,10 @@
       </p>
 
       <nav>
-        <a href="product-listing.html">Product Listing Page</a>
+        <a href="product-listing.html" class="button-nav">Product Page</a>
+        <a href="product-listing.html" class="button-nav">Checkout Page</a>
+        <br>
+        <br>
         <a href="#interactive_elements">Interactive Elements</a>
         <a href="#text_elements">Text Elements</a>
         <a href="#combined_elements">Combined Elements</a>
@@ -137,10 +140,10 @@
         <h3>Image as a Link</h3>
 
         <figure class="image-link">
-          <a href="https://www.google.com">
+          <a href="product-listing.html">
             <img
               class="image-link"
-              src="img/ironoakgameslogo.jpeg"
+              src="img/CompanyLogo.png"
               alt="The logo for the game studio Iron Oak Games."
             />
           </a>
@@ -152,9 +155,9 @@
         <h4>Sample code:</h4>
         <code>
           &lt;figure&gt;<br />
-          &emsp;&lt;a href="https://www.google.com"&gt;<br />
-          &emsp;&emsp;&lt;img class="image-link" src="img/ironoakgameslogo.jpeg" alt="The logo for
-          the game studio Iron Oak Games."&gt;<br />
+          &emsp;&lt;a href="product-listing.html"&gt;<br />
+          &emsp;&emsp;&lt;img class="image-link" src="img/CompanyLogo.jpeg" alt="A custom logo for
+          our fictional game studio ."&gt;<br />
           &emsp;&lt;/a&gt;<br />
           &lt;/figure&gt;
         </code>
@@ -239,20 +242,22 @@
       <section class="element">
         <h3>Main Navigation</h3>
 
+        <header>
           <div class="main-nav">
             <h1>
-              <img src="img/ironoakgameslogo.jpeg" alt="The logo for the game studio Iron Oak Games.">
-              Website Title
+              <!-- **TO CHANGE HERO IMAGE TO AN ACTUAL HERO IMAGE -->
+              <img src="img/CompanyLogo.png" alt="Company Logo" />
+              Company Name
             </h1>
-            <nav>      
-              <a href="" class="button-nav">Main</a>  
-              <a href="" class="button-nav">About</a>
-              <a href="" class="button-nav">Recent Titles</a>
-              <a href="product-listing.html" class="button-nav">Published Games</a>
-              <a href="" class="button-nav">Checkout</a>
-              <a href="" class="button-nav">Citations</a>
+            <nav>
+              <a href="index.html" class="button-nav"> Style Guide</a>
+              <a href="product-listing.html" class="button-nav">Our Games</a>
+              <!-- **TO ADD CHECKOUT FILE LINK and citations link  -->
+              <a href="checkout.html" class="button-nav">Checkout</a>
+              <a href="index.html#citations" class="button-nav">Citations</a>
             </nav>
           </div>
+        </header>
 
         <h4>CSS Selector:</h4>
         <p>.main-nav</p>
