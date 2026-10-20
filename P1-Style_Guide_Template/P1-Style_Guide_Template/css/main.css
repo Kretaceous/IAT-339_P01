@@ -6,16 +6,16 @@ body {
   background-color: #fbf5e6;
   font-family: "Satoshi";
   font-weight: normal;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: #2036A8;
+  border-top-color: #2036a8;
 }
-
 
 h1,
 h2,
@@ -51,23 +51,24 @@ p {
 
 /* In-text links */
 p a {
-  color: #5C8DF6;
+  color: #5c8df6;
   transition-duration: 0.5s;
 }
 
-p a:hover, p a:focus {
-  color: #FF7A00;
+p a:hover,
+p a:focus {
+  color: #ff7a00;
   text-decoration: none;
 }
 
 nav a {
-  color: #5C8DF6;
+  color: #5c8df6;
   transition-duration: 0.5s;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #FF7A00;
+  color: #ff7a00;
   text-decoration: none;
 }
 
@@ -135,9 +136,10 @@ code {
   transition-duration: 0.5s;
 }
 
-.button-nav:hover, .button-nav:focus {
- color: white;
-  background-color: #2036A8;
+.button-nav:hover,
+.button-nav:focus {
+  color: white;
+  background-color: #2036a8;
   scale: 1.05;
 }
 
@@ -185,10 +187,13 @@ code {
 .image-link {
   transition-duration: 0.5s;
   object-fit: cover;
-  object-position: center; 
+  object-position: center;
 }
 
-.image-link:hover, .image-link:focus, .button-nav:hover, .button-nav:focus {
+.image-link:hover,
+.image-link:focus,
+.button-nav:hover,
+.button-nav:focus {
   /* background-color: #FFD21F; */
   scale: 1.05;
 }
@@ -201,38 +206,37 @@ code {
   transition-duration: 0.25s;
 }
 
-
 /* Form Stuff */
 form {
   /* margin-top: 0.25rem; */
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 /* Radio Inputs: */
 
 /* This forum was used for reference on chaning the appearance of radio buttons: 
 https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons */
-input[type='radio']:after {
+input[type="radio"]:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
   top: -2px;
   left: -1px;
   position: relative;
-  background-color: #5C8DF6;
-  content: '';
+  background-color: #5c8df6;
+  content: "";
   display: inline-block;
   visibility: visible;
-  border: 2px solid #2036A8;
+  border: 2px solid #2036a8;
   place-content: center;
   vertical-align: middle;
   transition-duration: 0.25s;
 }
 
-input[type='radio']:checked:after {
+input[type="radio"]:checked:after {
   position: relative;
-  background-color: #FFD21F;
-  border: 2px solid #FF7A00;
+  background-color: #ffd21f;
+  border: 2px solid #ff7a00;
 }
 
 input[type="radio"]:not(:disabled):hover {
@@ -253,35 +257,35 @@ input[type="radio"]:not(:disabled):hover {
   border-radius: 0.5rem;
 }
 
-.form-input:active, .form-input:hover, .form-input:focus {
+.form-input:active,
+.form-input:hover,
+.form-input:focus {
   outline: none;
-  background-color: #FFD21F;
-  border: 2px solid #FF7A00;
-	color: black; 
+  background-color: #ffd21f;
+  border: 2px solid #ff7a00;
+  color: black;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* To learn how to edit the style of placeholder text in an input text area, I referred to this online forum:
 https://stackoverflow.com/questions/43793639/change-placeholder-text-color-of-textarea */
-.form-input::placeholder { 
-	color: white; 
+.form-input::placeholder {
+  color: white;
 }
 
 /* To learn how to edit the style a textarea when inputted, I referred to this online documentation:
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:placeholder-shown */
 .form-input:not(:placeholder-shown) {
-  border: 2px solid #FF7A00;
-  background-color: #FFD21F;
-	color: black; 
+  border: 2px solid #ff7a00;
+  background-color: #ffd21f;
+  color: black;
   transition-duration: 0.5s;
 }
 
 label {
   font-weight: bold;
-	color: #5C8DF6;
+  color: #5c8df6;
 }
-
-
 
 /* 
   TEXT ELEMENTS -------------------
@@ -292,11 +296,18 @@ label {
 */
 
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-bottom: 2rem;
   padding: 2rem;
-  background-image: 
-  linear-gradient(to right, rgba(251, 245, 230,1) 33%,
-              rgba(0,0,0,0)),
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(251, 245, 230, 0.3) 33%,
+      rgba(251, 245, 230, 0.3)
+    ),
     url("../img/SkyBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -380,7 +391,6 @@ label {
   position: relative;
   padding: 1rem;
   margin: 0 auto;
-  
 }
 
 .checkout-table img {
