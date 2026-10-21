@@ -404,3 +404,10 @@ label {
   background-color: #ffd21f;
   color: #2036a8;
 }
+
+.logo-items img {
+  width: 20vw;
+  max-width: 183px;
+  height: auto;
+}
+    
