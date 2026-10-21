@@ -7,7 +7,7 @@ body {
   font-family: "Satoshi";
   font-weight: normal;
   margin: 0;
-  padding: 0;
+  padding: 2rem;
 }
 
 .element {
@@ -311,6 +311,11 @@ label {
     url("../img/SkyBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  /* Pushes header to screen edge, while keeping page padding */
+  width: 100%;
+  margin-left: -2rem;
+  margin-top: -2rem;
 }
 
 .product-name {
@@ -384,7 +389,7 @@ label {
   font-family: "Clash Display";
   padding: 1rem;
   text-align: center;
-  font-size: 1.1;
+  font-size: 1.1rem;
 }
 
 .checkout-table td {
