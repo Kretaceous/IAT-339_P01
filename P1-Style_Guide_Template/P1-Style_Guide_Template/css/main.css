@@ -434,10 +434,16 @@ label {
 
 .centered {
   justify-content: center;
-  text-align: center;
+  text-align: left;
 }
 
 .centered dd dt {
   font-weight: bold;
   margin-left: 0;
+}
+
+@media (max-width: 700px) {
+  .half-screen-element {
+    width: 100%;
+  }
 }
