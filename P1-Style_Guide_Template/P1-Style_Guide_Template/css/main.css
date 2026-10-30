@@ -73,7 +73,8 @@ nav a:focus {
 }
 
 code {
-  background-color: #5c8df680; /* '80' at the end means 50% opacity */
+  background-color: #5c8df680;
+  /* '80' at the end means 50% opacity */
   color: #2036a8;
   padding: 0.5rem;
   display: block;
@@ -95,7 +96,8 @@ code {
   font-family: "Clash Display";
 
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* horizontal offset | vertical offset | blur radius | color */
 
   transition-duration: 0.5s;
 }
@@ -131,7 +133,8 @@ code {
   font-family: "Clash Display";
 
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* horizontal offset | vertical offset | blur radius | color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  /* horizontal offset | vertical offset | blur radius | color */
 
   transition-duration: 0.5s;
 }
@@ -155,7 +158,8 @@ code {
   font-family: "Clash Display";
 
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* horizontal offset | vertical offset | blur radius | color */
 
   transition-duration: 0.5s;
 
@@ -175,7 +179,8 @@ code {
   font-family: "Clash Display";
 
   border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* horizontal offset | vertical offset | blur radius | color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* horizontal offset | vertical offset | blur radius | color */
 
   transition-duration: 0.5s;
 
@@ -303,11 +308,9 @@ label {
   margin-bottom: 2rem;
   padding: 2rem;
   background-image:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(251, 245, 230, 0.3) 33%,
-      rgba(251, 245, 230, 0.3)
-    ),
+      rgba(251, 245, 230, 0.3)),
     url("../img/SkyBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -318,6 +321,7 @@ label {
   margin-top: -2rem;
 }
 
+/* Product list stuff */
 .product-name {
   color: #ff7a00;
 }
@@ -325,6 +329,7 @@ label {
 .product-image {
   border-radius: 1em;
   border: 0.2em solid #ffd21f;
+  object-fit: fill;
 }
 
 .product-list-flexbox {
@@ -348,10 +353,36 @@ label {
   scale: 1.05;
 }
 
+/* Event List stuff */
+.event-name {
+  color: #5c8df6;
+}
+
+.event-image {
+  border-radius: 1em;
+  border: 0.2em solid #5c8df6;
+  object-fit: fill;
+}
+
+.event-list-description {
+  max-width: 25rem;
+}
+
+.event-list-item {
+  text-decoration: none;
+  transition-duration: 0.5s;
+  max-width: 25rem;
+}
+
 .flex-container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+
+.event-list-item:hover,
+.event-list-item:focus {
+  scale: 1.05;
 }
 
 .half-screen-element {
@@ -405,6 +436,7 @@ label {
   border-radius: 1em;
   border: 0.2em solid #ffd21f;
 }
+
 .total-row th {
   background-color: #ffd21f;
   color: #2036a8;
@@ -415,4 +447,15 @@ label {
   max-width: 183px;
   height: auto;
 }
-    
+
+footer {
+  margin-top: 5rem;
+  background-color: #B5E61D;
+  border-top: 1rem solid #22B14C;
+
+  /* Pushes footer to screen edge, while keeping page padding */
+  width: 100%;
+  margin-left: -2rem;
+  margin-bottom: -4rem;
+  padding: 2rem;
+}
