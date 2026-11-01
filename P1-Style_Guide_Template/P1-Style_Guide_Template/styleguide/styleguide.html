@@ -17,8 +17,13 @@
       </p>
 
       <nav>
-        <a href="product-listing.html" class="button-nav">Product Page</a>
-        <a href="checkout.html" class="button-nav">Checkout Page</a>
+        <h3>Website Pages</h3>
+        <nav class="nav-buttons">
+          <a href="../index.html#events" class="button-nav">News</a>
+          <a href="../index.html#product-list" class="button-nav">Games</a>
+          <a href="../checkout.html" class="button-nav">Cart</a>
+          <a href="../about.html" class="button-nav">About Us</a>
+        </nav>
         <br>
         <br>
         <a href="#interactive_elements">Interactive Elements</a>
@@ -32,12 +37,12 @@
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+      <h2 class="header-margin">Interactive Elements</h2>
 
       <!--In-text link-->
       <!--Drew from the sample website HTML tuturial file in the lecture-->
       <section class="element">
-        <h3>In-text link</h3>
+        <h3 class="header-margin2">In-text link</h3>
         <p>
           Click <a href="https://ironoakgames.com/" target="_blank">this</a> to
           go directly to our website!
@@ -53,7 +58,7 @@
 
       <!-- Default Button styling section -->
       <section class="element">
-        <h3>Navigation Link</h3>
+        <h3 class="header-margin2">Navigation Link</h3>
         <nav>
           <a href="#combined_elements">Go to Combined Elements</a>
         </nav>
@@ -71,7 +76,7 @@
       <!--Submit/Reset Buttons-->
       <!--Drew from the "Middle Georgia State University" website on learning HTML-->
       <section class="element">
-        <h3>Submit/Reset Buttons</h3>
+        <h3 class="header-margin2">Submit/Reset Buttons</h3>
 
         <input type="submit" class="submit-button" name="submit_button" value="Submit" />
         <input type="reset" class="reset-button" name="reset_button" value="Reset" />
@@ -90,7 +95,7 @@
       <!--Text input field with label-->
       <!--Drew from the sample website HTML tutorial file in the lecture-->
       <section class="element">
-        <h3>Text Input Field with Label</h3>
+        <h3 class="header-margin2">Text Input Field with Label</h3>
 
         <form method="post" action="#">
           <label>Example Text Input Field</label> <br>
@@ -111,7 +116,7 @@
       <!--Radio Button with Label-->
       <!--Used the W3Schools page on input type="radio".-->
       <section class="element">
-        <h3>Radio Button with Label</h3>
+        <h3 class="header-margin2">Radio Button with Label</h3>
 
         <input type="radio" class="radio-button" id="radio_button1" name="radio_button" />
         <label for="radio_button1">Radio Button 1</label>
@@ -137,7 +142,7 @@
       <!--Image as a link-->
       <!--The "a" section of HTML Doctor and HTML Standard helped how to place code within the href-->
       <section class="element">
-        <h3>Image as a Link</h3>
+        <h3 class="header-margin2">Image as a Link</h3>
 
         <figure class="image-link">
           <a href="product-listing.html">
@@ -169,12 +174,12 @@
     <!--Drew from the sample website HTML tutorial file in the first lecture-->
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-      <h2>Text Elements</h2>
+      <h2 class="header-margin">Text Elements</h2>
 
       <section class="element">
-        <h3>Headings</h3>
+        <h3 class="header-margin2">Headings</h3>
 
-        <h3>Header 1</h3>
+        <h3 class="header-margin2">Header 1</h3>
         <h4>Header 2</h4>
         <h5>Header 3</h5>
         <h6>Header 4</h6>
@@ -194,7 +199,7 @@
       <!-- A paragraph -->
       <!--Drew from the sample website HTML tutorial file in the first lecture-->
       <section class="element">
-        <h3>Paragraphs</h3>
+        <h3 class="header-margin2">Paragraphs</h3>
         <p>This is a paragraph.</p>
 
          <h4>CSS Selector:</h4>
@@ -207,7 +212,7 @@
       <!--Numbered Lists-->
       <!--Learned from HTML5 Doctor/HTML Standard-->
       <section class="element">
-        <h3>Numbered Lists</h3>
+        <h3 class="header-margin2">Numbered Lists</h3>
 
         <ol class="numbered-list">
           <li>Entry 1</li>
@@ -237,29 +242,28 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <h2>Combined Elements</h2>
+      <h2 class="header-margin">Combined Elements</h2>
 
       <section class="element">
-        <h3>Main Navigation</h3>
+        <h3 class="header-margin2">Main Navigation</h3>
 
-        <header>
+        <!-- NAV -->
+        <header id="header">
           <div class="main-nav">
             <div class="logo-items">
               <h1>
-                <!-- **TO CHANGE HERO IMAGE TO AN ACTUAL HERO IMAGE -->
                 <img class="logo-image" src="../img/CompanyLogo.png" alt="Company Logo" /> <br />
                 Phoenix Games
               </h1>
             </div>
             <nav class="nav-buttons">
-              <a href="index.html" class="button-nav"> Style Guide</a>
-              <a href="product-listing.html" class="button-nav">Our Games</a>
-              <!-- **TO ADD CHECKOUT FILE LINK and citations link  -->
-              <a href="checkout.html" class="button-nav">Checkout</a>
-              <a href="index.html#citations" class="button-nav">Citations</a>
+              <a href="../index.html#events" class="button-nav">News</a>
+              <a href="../index.html#product-list" class="button-nav">Games</a>
+              <a href="../checkout.html" class="button-nav">Cart</a>
+              <a href="../about.html" class="button-nav">About Us</a>
             </nav>
           </div>
-      </header>
+        </header>
 
 
         <h4>CSS Selector:</h4>
@@ -281,7 +285,7 @@
       </section>
 
       <section class="element">
-        <h3>Product/Service Listing</h3>
+        <h3 class="header-margin2">Product/Service Listing</h3>
 
         <h4>Sample code:</h4>
         <code>
@@ -303,7 +307,7 @@
 
         <h4>Rendered element:</h4>
         <!-- Product Listing -->
-      <h2>Our Games</h2>
+      <h2 class="header-margin">Our Games</h2>
       <section class="element">
         <div class="product-list-flexbox">
           <div>
@@ -382,7 +386,7 @@
 
 
       <section class="element">
-        <h3>Payment Form</h3>
+        <h3 class="header-margin2">Payment Form</h3>
 
         <h4>Rendered element:</h4>
         
@@ -427,7 +431,7 @@
         
         <form method="post" action="#">
           <!-- Purchase button -->
-          <h3>
+          <h3 class="header-margin2">
             <a class="button-input" href="#">Purchase</a>
           </h3>
         </form>
@@ -485,7 +489,7 @@
       </section>
 
       <section class="element">
-        <h3>Checkout Cart</h3>
+        <h3 class="header-margin2">Checkout Cart</h3>
 
         <h4>Rendered element:</h4>
         <table class="checkout-table">
@@ -571,10 +575,10 @@
     <!-- // COMPANY ELEMENTS SECTION -->
 
     <section id="company">
-      <h2>Company</h2>
+      <h2 class="header-margin">Company</h2>
 
       <section class="element">
-        <h3>What our company does and offers</h3>
+        <h3 class="header-margin2">What our company does and offers</h3>
         <p>
           Our company is a fictional independant game developement studio. The
           products it lists are digital video games for sale, with descriptions
@@ -583,7 +587,7 @@
       </section>
 
       <section class="element">
-        <h3>Who our company is to potential customers, as a person.</h3>
+        <h3 class="header-margin2">Who our company is to potential customers, as a person.</h3>
         <p>
           Our company, to potential customers, can be seen as game designers,
           programmers, and various artists for all aspects of gampelay,
@@ -595,12 +599,12 @@
       </section>
 
       <section class="element">
-        <h3>Why might our company entice someone to purchase a product or service</h3>
+        <h3 class="header-margin2">Why might our company entice someone to purchase a product or service</h3>
         <p> Our company will entice gamers to play its games in order to generate revenue and share their artistic creations. The company may promote their games to gamers with an interest to similar video game genres or playstyles, outlined in the company personae.</p>
       </section>
 
       <section class="element">
-        <h3>Customer Personae</h3>
+        <h3 class="header-margin2">Customer Personae</h3>
         <h4>Supportive Sally</h4>
         <p> Our first persona is "Supportive Sally", who is interested in supporting local, independant game studios. Sally is a young adult and an avid gamer and represents a demographic that is used to playing various video games, but takes an interest in smaller, local creators like ourselves. </p>
         <h4>Casual Carl</h4>
@@ -609,10 +613,10 @@
     </section>
 
     <section id="branding">
-      <h2>Branding</h2>
+      <h2 class="header-margin">Branding</h2>
 
       <section class="element">
-        <h3>Fonts</h3>
+        <h3 class="header-margin2">Fonts</h3>
         <h3 class="clash-display-font">Primary Font - Clash Display</h3>
         <p>Legible, fun. clear, big, and playful. but still forword leaning. <br>Works as a loud voice of the brand for headlines, logo, section headings and callouts It reads confidently at large sizes without losing personality, which fits a games brands that wants to feel alive other the edgy corporte feel.</p>
 
@@ -625,7 +629,7 @@
           overwhelming the users</p>
         
         <br>
-        <h3>Font Pairings</h3>
+        <h3 class="header-margin2">Font Pairings</h3>
         <p>
           Clash Display is able to have fun and be bold, while Satoshi sits back
           and explains. Providing the balance we look for in the website we
@@ -634,7 +638,7 @@
       </section>
 
       <section class="element">
-        <h3>Colour Palettes</h3>
+        <h3 class="header-margin2">Colour Palettes</h3>
         <ul>
           <li>Bright Blue: #5C8DF6</li>
           <p>Primary Brand Colour. Bold but still playful.</p>
@@ -666,7 +670,7 @@
       </section>
 
       <section class="element">
-        <h3>Imagery & Art Direction</h3>
+        <h3 class="header-margin2">Imagery & Art Direction</h3>
         <p>
           Something edgy and forward like a games brand, but never boring,
           blunt, or bland. Imagery is bold and saturated, with dynamic
@@ -705,7 +709,7 @@
     </section>
 
     <section id="citations">
-      <h2>Citations</h2>
+      <h2 class="header-margin">Citations</h2>
 
       <ul>
         <li>

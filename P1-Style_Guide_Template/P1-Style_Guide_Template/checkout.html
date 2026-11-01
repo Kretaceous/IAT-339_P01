@@ -10,30 +10,28 @@
 
   <body>
     <!-- NAV -->
-    <header>
-          <div class="main-nav">
-            <div class="logo-items">
-              <h1>
-                <!-- **TO CHANGE HERO IMAGE TO AN ACTUAL HERO IMAGE -->
-                <img class="logo-image" src="img/CompanyLogo.png" alt="Company Logo" /> <br />
-                Phoenix Games
-              </h1>
-            </div>
-            <nav class="nav-buttons">
-              <a href="index.html" class="button-nav"> Style Guide</a>
-              <a href="product-listing.html" class="button-nav">Our Games</a>
-              <!-- **TO ADD CHECKOUT FILE LINK and citations link  -->
-              <a href="checkout.html" class="button-nav">Checkout</a>
-              <a href="index.html#citations" class="button-nav">Citations</a>
-            </nav>
-          </div>
-      </header>
+    <header id="header">
+      <div class="main-nav">
+        <div class="logo-items">
+          <h1>
+            <img class="logo-image" src="img/CompanyLogo.png" alt="Company Logo" /> <br />
+            Phoenix Games
+          </h1>
+        </div>
+        <nav class="nav-buttons">
+          <a href="index.html#events" class="button-nav">News</a>
+          <a href="index.html#product-list" class="button-nav">Games</a>
+          <a href="checkout.html" class="button-nav">Cart</a>
+          <a href="about.html" class="button-nav">About Us</a>
+        </nav>
+      </div>
+    </header>
 
     <!-- Checkout Cart and Payment Section // -->
     <section id="checkout-and-payment-section" class="flex-container">
 
       <section class="half-screen-element">
-        <h3>Payment</h3>
+        <h2 class="header-margin2">Payment</h2>
         <div class="payment-form">
           <form method="post" action="#">
           <label >Name: </label> <br>
@@ -81,7 +79,7 @@
       </section>
 
       <section class="element">
-        <h3>My Cart</h3>
+        <h2 class="header-margin2">My Cart</h2>
         <table class="checkout-table">
           <tr>
             <th>Game</th>
@@ -112,9 +110,18 @@
             <th>$24.98</th>
           </tr>
         </table>
-
       </section>
-
     </section>
+
+    <footer>
+      <p class="footer-info">
+        © 2026 Pheonix Games Inc. All Rights Reserved.<br/>
+        Authors: Eshan Esmail, Liam Curry, Marielle Reyes Lao<br/>
+        <a href="styleguide/styleguide.html">Style Guide</a> | <a href="styleguide/styleguide.html#citations">Citations</a><br/>
+        505-544-3029 | phoenixgames@gmail.com<br/>
+        <a href="https://github.com/Kretaceous/IAT-339_P01">GitHub Repository</a>
+      </p>
+    </footer>
+
   </body>
 </html>
