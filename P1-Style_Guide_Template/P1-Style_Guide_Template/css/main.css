@@ -459,3 +459,36 @@ footer {
   margin-bottom: -4rem;
   padding: 2rem;
 }
+
+/* NEW CSS things for Detail Product Page */
+.game-info dt {
+  font-family: "Clash Display";
+  font-weight: bold;
+}
+
+.game-info dd {
+  margin: 0 0 1rem;
+}
+
+.game-cta {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 0.15rem solid #2036a8;
+}
+
+.centered {
+  justify-content: center;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.centered dd dt {
+  font-weight: bold;
+  margin-left: 0;
+}
+
+@media (max-width: 700px) {
+  .half-screen-element {
+    width: 100%;
+  }
+}
