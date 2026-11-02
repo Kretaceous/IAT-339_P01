@@ -96,7 +96,7 @@
       <div class="flex-container">
         <article>
           <h4>Marielle</h4>
-          <p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
           <p class="product-list-description">w game frfr.</p>
         </article>
       </div>
@@ -105,8 +105,22 @@
     <section class="element">
       <h3>Leave Your Feedback</h3>
       <form method="post" action="#">
-        <label>Name: </label> <br />
-        <input type="text" class="form-input" placeholder="John Smith" />
+        <div class="rating">
+          <label>Name: </label> <br />
+          <input type="text" class="form-input" placeholder="John Smith" />
+        </div> <br/>
+
+        <label>Choose Star Rating: </label> 
+        <div class="rating">
+          <input type="radio" name="rating" id="star5" value="5"><label for="star5"></label>
+          <input type="radio" name="rating" id="star4" value="4"><label for="star4"></label>
+          <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
+          <input type="radio" name="rating" id="star2" value="2"><label for="star2"></label>
+          <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
+        </div>
+
+        <a class="button-input header-margin2" href="">Submit Rating</a>
+
       </form>
     </section>
 
