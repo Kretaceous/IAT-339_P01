@@ -353,6 +353,16 @@ label {
   max-width: 20rem;
 }
 
+.product-image-link:focus,
+.product-image-link:hover {
+  outline: none;
+}
+
+.product-image-link:focus img,
+.product-image-link:hover img {
+  border: 0.2em solid #5c8df6;
+}
+
 .product-list-item:hover,
 .product-list-item:focus {
   scale: 1.05;
@@ -378,6 +388,16 @@ label {
   text-decoration: none;
   transition-duration: 0.5s;
   max-width: 25rem;
+}
+
+.event-image-link:focus,
+.event-image-link:hover {
+  outline: none;
+}
+
+.event-image-link:focus img,
+.event-image-link:hover img {
+  border: 0.2em solid #ffd21f;
 }
 
 .flex-container {
