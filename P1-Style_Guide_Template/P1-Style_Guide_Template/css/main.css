@@ -503,10 +503,19 @@ footer {
   border-top: 0.15rem solid #2036a8;
 }
 
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
 .centered {
   display: flex;
   justify-content: center;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   padding-top: 1rem;
 }
 
