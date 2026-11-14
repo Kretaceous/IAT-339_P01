@@ -52,7 +52,7 @@
     <!-- Two columns: with game desc left and info right -->
     <section class="flex-grid">
       
-      <section class="flex-column game-description">
+      <section class="flex-column game-info-column">
         <h3>The best game to ever exist.</h3>
         <p>
           Take to the skies in the original pioneer of the Bird Game series! Fly
@@ -79,7 +79,7 @@
       </section>
 
 
-      <section class="flex-column game-description game-cta">
+      <section class="flex-column game-info-column game-cta">
         
         <h2>Game Info</h2>
         <dl class="game-info">
@@ -115,7 +115,7 @@
 
     <section class="flex-grid">
 
-      <section class="flex-column game-description game-cta game-buttons">
+      <section class="flex-column game-info-column game-cta game-buttons">
         
         <div>
           <a class="button-nav" href="birdgame2.html">See Bird Game 2</a>
@@ -124,7 +124,7 @@
 
       </section>
 
-      <section class="flex-column game-description game-buttons">
+      <section class="flex-column game-info-column game-buttons">
 
         <div>
           <a class="button-input" href="checkout.html">Add To Cart</a>
@@ -135,36 +135,81 @@
     </section>
 
     <section class="element" id="reviews">
-      <h3>Player Reviews</h3>
-      <div class="flex-container">
-        <article>
-          <h4>Marielle</h4>
-          <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
-          <p class="product-list-description">w game frfr.</p>
+      <h2>Player Reviews</h2>
+      
+      <div class="flex-grid game-review-row">
+
+        <div class="flex-column game-info-column">
+          <article>
+            <h4>Marielle<br>
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+            </h4>
+            <p>w game frfr.</p>
         </article>
-      </div>
-    </section>
-
-    <section class="element">
-      <h3>Leave Your Feedback</h3>
-      <form method="post" action="#">
-        <div class="rating">
-          <label>Name: </label> <br />
-          <input type="text" class="form-input" placeholder="John Smith" />
-        </div> <br/>
-
-        <label>Choose Star Rating: </label> 
-        <div class="rating">
-          <input type="radio" name="rating" id="star5" value="5"><label for="star5"></label>
-          <input type="radio" name="rating" id="star4" value="4"><label for="star4"></label>
-          <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
-          <input type="radio" name="rating" id="star2" value="2"><label for="star2"></label>
-          <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
         </div>
 
-        <a class="button-input header-margin2" href="">Submit Rating</a>
+        <div class="flex-column game-info-column">
+          <article>
+            <h4>Bird Enthusiast<br>
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+            </h4>
+            <p>w game frfr.</p>
+          </article>
+        </div>
 
-      </form>
+        <div class="flex-column game-info-column">
+          <article>
+            <h4>Bird Enthusiast 2<br>
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+            </h4>
+            <p>w game frfr.</p>
+          </article>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="element">
+    <h2>Leave Your Feedback</h2>
+      <div class="flex-grid">
+        <div class="flex-column game-info-column">
+          
+          <form method="post" action="#">
+            <div class="rating">
+              <label>Name: </label> <br />
+              <input type="text" class="form-input" placeholder="John Smith" />
+            </div> <br/>
+
+            <label>Choose Star Rating: </label> 
+            <div class="rating">
+              <input type="radio" name="rating" id="star5" value="5"><label for="star5"></label>
+              <input type="radio" name="rating" id="star4" value="4"><label for="star4"></label>
+              <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
+              <input type="radio" name="rating" id="star2" value="2"><label for="star2"></label>
+              <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
+            </div>
+            <a class="button-input header-margin2" href="">Submit Rating</a>
+          </form>
+
+        </div>
+
+        <div class="flex-column game-info-column">
+          <form method="post" action="#">
+            <div class="rating">
+              <label>Review: </label> <br />
+              <input type="text" class="form-input game-review-input" placeholder="Type here"/>
+            </div> <br/>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+      
     </section>
 
 
