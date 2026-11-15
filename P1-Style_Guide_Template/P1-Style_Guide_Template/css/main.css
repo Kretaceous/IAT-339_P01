@@ -6,8 +6,11 @@ body {
   background-color: #fbf5e6;
   font-family: "Satoshi";
   font-weight: normal;
-  margin: 0;
-  padding: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+
+  /* Prevent clipping for header and footer that are set to 100vw */
+  overflow-x: clip;
 
   /* Gradient stretches across the entire scrollable page */
   background: linear-gradient(to right,
@@ -312,11 +315,11 @@ p a:focus {
 */
 
 .main-nav {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 2rem;
   padding: 2rem;
   background-image:
     url("../img/SkyBanner.png");
@@ -324,9 +327,10 @@ p a:focus {
   background-size: cover;
 
   /* Pushes header to screen edge, while keeping page padding */
-  width: 100%;
-  margin-left: -2rem;
-  margin-top: -2rem;
+  width: 100vw;
+  margin-left: -6rem;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
   border-bottom: 1rem solid #66C26D;
 }
 
@@ -387,13 +391,13 @@ p a:focus {
 }
 
 .event-list-description {
-  max-width: 25rem;
+  max-width: 24rem;
 }
 
 .event-list-item {
   text-decoration: none;
   transition-duration: 0.5s;
-  max-width: 25rem;
+  max-width: 24rem;
 }
 
 .event-image-link:focus,
@@ -501,15 +505,16 @@ p a:focus {
 
 footer {
   text-align: center;
-  margin-top: 5rem;
   background-color: #C8E54D;
   border-top: 1rem solid #66C26D;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
 
   /* Pushes footer to screen edge, while keeping page padding */
-  width: 100%;
-  margin-left: -2rem;
+  width: 100vw;
+  margin-left: -6rem;
   margin-bottom: -4rem;
-  padding: 2rem;
 }
 
 /* NEW CSS things for Detail Product Page */
