@@ -1,135 +1,136 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Group 13's Style Guide</title>
 
-    <link href="../css/main.css" type="text/css" rel="stylesheet" />
-    <link href="../css/fonts.css" type="text/css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Group 13's Style Guide</title>
 
-  <body>
-    <header>
-      <h1>Group 13's Style Guide</h1>
+  <link href="../css/main.css" type="text/css" rel="stylesheet" />
+  <link href="../css/fonts.css" type="text/css" rel="stylesheet" />
+</head>
 
+<body>
+  <header>
+    <h1>Group 13's Style Guide</h1>
+
+    <p>
+      Here is our style guide for our Independant Video Game Company Website.
+    </p>
+
+    <nav>
+      <h3>Website Pages</h3>
+      <nav class="nav-buttons">
+        <a href="../index.html#events" class="button-nav">News</a>
+        <a href="../index.html#product-list" class="button-nav">Games</a>
+        <a href="../checkout.html" class="button-nav">Cart</a>
+        <a href="../about.html" class="button-nav">About Us</a>
+      </nav>
+      <br>
+      <br>
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text Elements</a>
+      <a href="#combined_elements">Combined Elements</a>
+      <a href="#company">Company</a>
+      <a href="#branding">Branding</a>
+      <a href="#citations">Citations</a>
+    </nav>
+  </header>
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2 class="header-margin">Interactive Elements</h2>
+
+    <!--In-text link-->
+    <!--Drew from the sample website HTML tuturial file in the lecture-->
+    <section class="element">
+      <h3 class="header-margin2">In-text link</h3>
       <p>
-        Here is our style guide for our Independant Video Game Company Website.
+        Click <a href="https://ironoakgames.com/" target="_blank">this</a> to
+        go directly to our website!
       </p>
 
-      <nav>
-        <h3>Website Pages</h3>
-        <nav class="nav-buttons">
-          <a href="../index.html#events" class="button-nav">News</a>
-          <a href="../index.html#product-list" class="button-nav">Games</a>
-          <a href="../checkout.html" class="button-nav">Cart</a>
-          <a href="../about.html" class="button-nav">About Us</a>
-        </nav>
-        <br>
-        <br>
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="#company">Company</a>
-        <a href="#branding">Branding</a>
-        <a href="#citations">Citations</a>
-      </nav>
-    </header>
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2 class="header-margin">Interactive Elements</h2>
-
-      <!--In-text link-->
-      <!--Drew from the sample website HTML tuturial file in the lecture-->
-      <section class="element">
-        <h3 class="header-margin2">In-text link</h3>
-        <p>
-          Click <a href="https://ironoakgames.com/" target="_blank">this</a> to
-          go directly to our website!
-        </p>
-
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;p&gt;Click &lt;a href="https://ironoakgames.com/"
           target="_blank"&gt;this&lt;/a&gt; to go directly to our
           website!&lt;/p&gt;
         </code>
-      </section>
+    </section>
 
-      <!-- Default Button styling section -->
-      <section class="element">
-        <h3 class="header-margin2">Navigation Link</h3>
-        <nav>
-          <a href="#combined_elements">Go to Combined Elements</a>
-        </nav>
+    <!-- Default Button styling section -->
+    <section class="element">
+      <h3 class="header-margin2">Navigation Link</h3>
+      <p>
+        <a href="#combined_elements">Go to Combined Elements</a>
+      </p>
 
-        <h4>CSS selector:</h4>
-        <p>.button-input - style for all navigation buttons</p>
+      <h4>CSS selector:</h4>
+      <p>.button-input - style for all navigation buttons</p>
 
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button-input"&gt;Default Button&lt;/a&gt;</code>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button-input"&gt;Default Button&lt;/a&gt;</code>
 
-        <h4>Rendered element:</h4>
-        <a class="button-input" href="#">Default Button</a>
-      </section>
+      <h4>Rendered element:</h4>
+      <a class="button-input" href="#">Default Button</a>
+    </section>
 
-      <!--Submit/Reset Buttons-->
-      <!--Drew from the "Middle Georgia State University" website on learning HTML-->
-      <section class="element">
-        <h3 class="header-margin2">Submit/Reset Buttons</h3>
+    <!--Submit/Reset Buttons-->
+    <!--Drew from the "Middle Georgia State University" website on learning HTML-->
+    <section class="element">
+      <h3 class="header-margin2">Submit/Reset Buttons</h3>
 
-        <input type="submit" class="submit-button" name="submit_button" value="Submit" />
-        <input type="reset" class="reset-button" name="reset_button" value="Reset" />
+      <input type="submit" class="submit-button" name="submit_button" value="Submit" />
+      <input type="reset" class="reset-button" name="reset_button" value="Reset" />
 
-        <h4>CSS Selector:</h4>
-        <p>.submit-button - style for the submit button </p>
-        <p>.reset-button - style for the reset button </p>
+      <h4>CSS Selector:</h4>
+      <p>.submit-button - style for the submit button </p>
+      <p>.reset-button - style for the reset button </p>
 
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;input type="submit" name="submit_button" value="Submit"&gt;<br />
           &lt;input type="reset" name="reset_button" value="Reset"&gt;<br />
         </code>
-      </section>
+    </section>
 
-      <!--Text input field with label-->
-      <!--Drew from the sample website HTML tutorial file in the lecture-->
-      <section class="element">
-        <h3 class="header-margin2">Text Input Field with Label</h3>
+    <!--Text input field with label-->
+    <!--Drew from the sample website HTML tutorial file in the lecture-->
+    <section class="element">
+      <h3 class="header-margin2">Text Input Field with Label</h3>
 
-        <form method="post" action="#">
-          <label>Example Text Input Field</label> <br>
-          <input type="text" class="form-input" placeholder="Type here:" />
+      <form method="post" action="#">
+        <label>Example Text Input Field</label> <br>
+        <input type="text" class="form-input" placeholder="Type here:" />
 
-          <h4>CSS Selector:</h4>
-          <p>.form-input</p>
+        <h4>CSS Selector:</h4>
+        <p>.form-input</p>
 
-          <h4>Sample code:</h4>
-          <code>
+        <h4>Sample code:</h4>
+        <code>
             &lt;label &gt;Example Text Input&lt;/label&gt; &lt;br&gt;<br />
             &lt;input type="text" class="form-input" placeholder="Type
             here:"&gt;
           </code>
-        </form>
-      </section>
+      </form>
+    </section>
 
-      <!--Radio Button with Label-->
-      <!--Used the W3Schools page on input type="radio".-->
-      <section class="element">
-        <h3 class="header-margin2">Radio Button with Label</h3>
+    <!--Radio Button with Label-->
+    <!--Used the W3Schools page on input type="radio".-->
+    <section class="element">
+      <h3 class="header-margin2">Radio Button with Label</h3>
 
-        <input type="radio" class="radio-button" id="radio_button1" name="radio_button" />
-        <label for="radio_button1">Radio Button 1</label>
-        <input type="radio" class="radio-button" id="radio_button2" name="radio_button" />
-        <label for="radio_button2">Radio Button 2</label>
-        <input type="radio" class="radio-button" id="radio_button3" name="radio_button" />
-        <label for="radio_button3">Radio Button 3</label>
+      <input type="radio" class="radio-button" id="radio_button1" name="radio_button" />
+      <label for="radio_button1">Radio Button 1</label>
+      <input type="radio" class="radio-button" id="radio_button2" name="radio_button" />
+      <label for="radio_button2">Radio Button 2</label>
+      <input type="radio" class="radio-button" id="radio_button3" name="radio_button" />
+      <label for="radio_button3">Radio Button 3</label>
 
-        <h4>CSS Selector:</h4>
-        <p>.radio-button</p>
+      <h4>CSS Selector:</h4>
+      <p>.radio-button</p>
 
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;input type="radio" id="radio_button1" name="radio_button"&gt;<br>
           &lt;label for="radio_button1"&gt;Radio Button 1&lt;/label&gt;<br>
           &lt;input type="radio" id="radio_button2" name="radio_button"&gt;<br>
@@ -137,28 +138,24 @@
           &lt;input type="radio" id="radio_button3" name="radio_button"&gt;<br>
           &lt;label for="radio_button3"&gt;Radio Button 3&lt;/label&gt;
         </code>
-      </section>
+    </section>
 
-      <!--Image as a link-->
-      <!--The "a" section of HTML Doctor and HTML Standard helped how to place code within the href-->
-      <section class="element">
-        <h3 class="header-margin2">Image as a Link</h3>
+    <!--Image as a link-->
+    <!--The "a" section of HTML Doctor and HTML Standard helped how to place code within the href-->
+    <section class="element">
+      <h3 class="header-margin2">Image as a Link</h3>
 
-        <figure class="image-link">
-          <a href="product-listing.html">
-            <img
-              class="image-link"
-              src="../img/CompanyLogo.png"
-              alt="The logo for the game studio Iron Oak Games."
-            />
-          </a>
-        </figure>
+      <figure class="image-link">
+        <a href="product-listing.html">
+          <img class="image-link" src="../img/CompanyLogo.png" alt="The logo for the game studio Iron Oak Games." />
+        </a>
+      </figure>
 
-        <h4>CSS Selector:</h4>
-        <p>.image-link</p>
+      <h4>CSS Selector:</h4>
+      <p>.image-link</p>
 
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;figure&gt;<br />
           &emsp;&lt;a href="product-listing.html"&gt;<br />
           &emsp;&emsp;&lt;img class="image-link" src="../img/CompanyLogo.jpeg" alt="A custom logo for
@@ -166,67 +163,67 @@
           &emsp;&lt;/a&gt;<br />
           &lt;/figure&gt;
         </code>
-      </section>
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-    <!-- Four levels of heading -->
-    <!--Drew from the sample website HTML tutorial file in the first lecture-->
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2 class="header-margin">Text Elements</h2>
+  <!-- Four levels of heading -->
+  <!--Drew from the sample website HTML tutorial file in the first lecture-->
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2 class="header-margin">Text Elements</h2>
 
-      <section class="element">
-        <h3 class="header-margin2">Headings</h3>
+    <section class="element">
+      <h3 class="header-margin2">Headings</h3>
 
-        <h3 class="header-margin2">Header 1</h3>
-        <h4>Header 2</h4>
-        <h5>Header 3</h5>
-        <h6>Header 4</h6>
+      <h3 class="header-margin2">Header 1</h3>
+      <h4>Header 2</h4>
+      <h5>Header 3</h5>
+      <h6>Header 4</h6>
 
-        <h4>CSS Selector:</h4>
-        <p>h1, h2, h3, h4, h5, h6</p>
+      <h4>CSS Selector:</h4>
+      <p>h1, h2, h3, h4, h5, h6</p>
 
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;h3&gt;Header 1&lt;/h3&gt;<br />
           &lt;h4&gt;Header 2&lt;/h4&gt;<br />
           &lt;h5&gt;Header 3&lt;/h5&gt;<br />
           &lt;h6&gt;Header 4&lt;/h6&gt;
         </code>
-      </section>
+    </section>
 
-      <!-- A paragraph -->
-      <!--Drew from the sample website HTML tutorial file in the first lecture-->
-      <section class="element">
-        <h3 class="header-margin2">Paragraphs</h3>
-        <p>This is a paragraph.</p>
+    <!-- A paragraph -->
+    <!--Drew from the sample website HTML tutorial file in the first lecture-->
+    <section class="element">
+      <h3 class="header-margin2">Paragraphs</h3>
+      <p>This is a paragraph.</p>
 
-         <h4>CSS Selector:</h4>
-         <p>p</p>
+      <h4>CSS Selector:</h4>
+      <p>p</p>
 
-        <h4>Sample code:</h4>
-        <code> &lt;p&gt;This is a paragraph.&lt;/p&gt; </code>
-      </section>
+      <h4>Sample code:</h4>
+      <code> &lt;p&gt;This is a paragraph.&lt;/p&gt; </code>
+    </section>
 
-      <!--Numbered Lists-->
-      <!--Learned from HTML5 Doctor/HTML Standard-->
-      <section class="element">
-        <h3 class="header-margin2">Numbered Lists</h3>
+    <!--Numbered Lists-->
+    <!--Learned from HTML5 Doctor/HTML Standard-->
+    <section class="element">
+      <h3 class="header-margin2">Numbered Lists</h3>
 
-        <ol class="numbered-list">
-          <li>Entry 1</li>
-          <li>Entry 2</li>
-          <li>Entry 3</li>
-          <li>Entry 4</li>
-          <li>Entry 5</li>
-        </ol>
+      <ol class="numbered-list">
+        <li>Entry 1</li>
+        <li>Entry 2</li>
+        <li>Entry 3</li>
+        <li>Entry 4</li>
+        <li>Entry 5</li>
+      </ol>
 
-        <h4>CSS Selector:</h4>
-         <p>.numbered-list</p>
+      <h4>CSS Selector:</h4>
+      <p>.numbered-list</p>
 
-        <h4>Sample code:</h4>
-        <code>
+      <h4>Sample code:</h4>
+      <code>
           &lt;ol&gt;<br> 
             &lt;li&gt;Entry 1&lt;/li&gt;<br>
             &lt;li&gt;Entry 2&lt;/li&gt;<br>
@@ -236,41 +233,41 @@
           &lt;/ol&gt; 
         </code>
 
-      </section>
     </section>
-    <!-- // TEXT ELEMENTS SECTION -->
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2 class="header-margin">Combined Elements</h2>
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2 class="header-margin">Combined Elements</h2>
 
-      <section class="element">
-        <h3 class="header-margin2">Main Navigation</h3>
+    <section class="element">
+      <h3 class="header-margin2">Main Navigation</h3>
 
-        <!-- NAV -->
-        <header id="header">
-          <div class="main-nav">
-            <div class="logo-items">
-              <h1>
-                <img class="logo-image" src="../img/CompanyLogo.png" alt="Company Logo" /> <br />
-                Phoenix Games
-              </h1>
-            </div>
-            <nav class="nav-buttons">
-              <a href="../index.html#events" class="button-nav">News</a>
-              <a href="../index.html#product-list" class="button-nav">Games</a>
-              <a href="../checkout.html" class="button-nav">Cart</a>
-              <a href="../about.html" class="button-nav">About Us</a>
-            </nav>
+      <!-- NAV -->
+      <header id="header">
+        <div class="main-nav">
+          <div class="logo-items">
+            <h1>
+              <img class="logo-image" src="../img/CompanyLogo.png" alt="Company Logo" /> <br />
+              Phoenix Games
+            </h1>
           </div>
-        </header>
+          <nav class="nav-buttons">
+            <a href="../index.html#events" class="button-nav">News</a>
+            <a href="../index.html#product-list" class="button-nav">Games</a>
+            <a href="../checkout.html" class="button-nav">Cart</a>
+            <a href="../about.html" class="button-nav">About Us</a>
+          </nav>
+        </div>
+      </header>
 
 
-        <h4>CSS Selector:</h4>
-        <p>.main-nav</p>
+      <h4>CSS Selector:</h4>
+      <p>.main-nav</p>
 
-          <h4>Sample code:</h4>
-          <code>
+      <h4>Sample code:</h4>
+      <code>
             &lt;nav&gt;<br> 
               &lt;a href="" class="button-nav"&gt;Main&lt;/a&gt;<br>
               &lt;a href="" class="button-nav"&gt;About&lt;/a&gt;<br>
@@ -281,14 +278,14 @@
             &lt;/nav&gt; 
           </nav>
           </code>
-          
-      </section>
 
-      <section class="element">
-        <h3 class="header-margin2">Product/Service Listing</h3>
+    </section>
 
-        <h4>Sample code:</h4>
-        <code>
+    <section class="element">
+      <h3 class="header-margin2">Product/Service Listing</h3>
+
+      <h4>Sample code:</h4>
+      <code>
         &lt;div&gt;<br>
         &lt;a href=""&gt;
         &lt;h2 class="product-name"&gt;Bird Game: &lt;br&gt; Wacky Wings&lt;/h2&gt;<br>
@@ -300,13 +297,13 @@
         &lt;/div&gt;
         </code>
 
-        <h4>CSS Selector:</h4>
-        <p>.product-list-item</p>
-        <p>.product-name</p>
-        <p>.product-image</p>
+      <h4>CSS Selector:</h4>
+      <p>.product-list-item</p>
+      <p>.product-name</p>
+      <p>.product-image</p>
 
-        <h4>Rendered element:</h4>
-        <!-- Product Listing -->
+      <h4>Rendered element:</h4>
+      <!-- Product Listing -->
       <h2 class="header-margin">Our Games</h2>
       <section class="element">
         <div class="product-list-flexbox">
@@ -316,13 +313,8 @@
                 Bird Game: <br />
                 Wacky Wings
               </h2>
-              <img
-                class="product-image"
-                src="../img/BirdGame1.png"
-                alt="Video game cover image of Bird Game 1"
-                width="300"
-                height="300"
-              />
+              <img class="product-image" src="../img/BirdGame1.png" alt="Video game cover image of Bird Game 1"
+                width="300" height="300" />
             </section>
             <h4>CAD $9.99</h4>
             <p class="product-list-description">
@@ -340,13 +332,8 @@
                 Bird Game 2: <br />
                 Bird's Return
               </h2>
-              <img
-                class="product-image"
-                src="../img/BirdGame2.png"
-                alt="Video game cover image of Bird Game 2"
-                width="300"
-                height="300"
-              />
+              <img class="product-image" src="../img/BirdGame2.png" alt="Video game cover image of Bird Game 2"
+                width="300" height="300" />
             </section>
             <h4>CAD $14.99</h4>
             <p class="product-list-description">
@@ -364,13 +351,8 @@
                 Bird Game 3: <br />
                 Final Feathers
               </h2>
-              <img
-                class="product-image"
-                src="../img/BirdGame3.png"
-                alt="Video game cover image of Bird Game 3"
-                width="300"
-                height="300"
-              />
+              <img class="product-image" src="../img/BirdGame3.png" alt="Video game cover image of Bird Game 3"
+                width="300" height="300" />
             </section>
             <h4>CAD $12.99</h4>
             <p class="product-list-description">
@@ -389,52 +371,52 @@
         <h3 class="header-margin2">Payment Form</h3>
 
         <h4>Rendered element:</h4>
-        
+
         <div class="payment-form">
-        <form method="post" action="#">
-        <label >Name: </label> <br>
-        <input type="text" class="form-input" placeholder="John Smith">
-        </form>
-      
-        <form method="post" action="#">
-        <label>Address: </label> <br>
-        <input type="text" class="form-input" placeholder="Unit 1, 123 Street">
-        </form>
-      
-        <form method="post" action="#">
-        <label>Payment Type: </label> <br>
-        <input type="radio" name="radio_button">
-        <label>Credit</label>
-        <input type="radio" name="radio_button">
-        <label>Debit</label>
-        </form>
-      
-        <form method="post" action="#">
-        <label>Card Number: </label> <br>
-        <input type="text" class="form-input" placeholder="000 000 000 0000">
-        </form>
-      
-        <form method="post" action="#">
-        <label>ZIP: </label> <br>
-        <input type="text" class="form-input" placeholder="123 ABC">
-        </form>
-      
-        
-        <form method="post" action="#">
-        <label> Do you consent to user terms and agreements? </label> <br>
-        <input type="radio" name="radio_button">
-        <label>Yes</label>
-        <input type="radio" name="radio_button">
-        <label>No</label>
-        </form>
-        
-        
-        <form method="post" action="#">
-          <!-- Purchase button -->
-          <h3 class="header-margin2">
-            <a class="button-input" href="#">Purchase</a>
-          </h3>
-        </form>
+          <form method="post" action="#">
+            <label>Name: </label> <br>
+            <input type="text" class="form-input" placeholder="John Smith">
+          </form>
+
+          <form method="post" action="#">
+            <label>Address: </label> <br>
+            <input type="text" class="form-input" placeholder="Unit 1, 123 Street">
+          </form>
+
+          <form method="post" action="#">
+            <label>Payment Type: </label> <br>
+            <input type="radio" name="radio_button">
+            <label>Credit</label>
+            <input type="radio" name="radio_button">
+            <label>Debit</label>
+          </form>
+
+          <form method="post" action="#">
+            <label>Card Number: </label> <br>
+            <input type="text" class="form-input" placeholder="000 000 000 0000">
+          </form>
+
+          <form method="post" action="#">
+            <label>ZIP: </label> <br>
+            <input type="text" class="form-input" placeholder="123 ABC">
+          </form>
+
+
+          <form method="post" action="#">
+            <label> Do you consent to user terms and agreements? </label> <br>
+            <input type="radio" name="radio_button">
+            <label>Yes</label>
+            <input type="radio" name="radio_button">
+            <label>No</label>
+          </form>
+
+
+          <form method="post" action="#">
+            <!-- Purchase button -->
+            <h3 class="header-margin2">
+              <a class="button-input" href="#">Purchase</a>
+            </h3>
+          </form>
 
         </div>
 
@@ -501,8 +483,8 @@
           </tr>
           <tr>
             <td class="game-cell">
-              <span class="game-name">Bird Game: Wacky Wings</span> 
-              <img src="../img/BirdGame1.png" alt="MSpaint_BirdGame1_thumbnail">           
+              <span class="game-name">Bird Game: Wacky Wings</span>
+              <img src="../img/BirdGame1.png" alt="MSpaint_BirdGame1_thumbnail">
             </td>
             <td>$9.99</td>
             <td>1</td>
@@ -534,7 +516,7 @@
       <p>.game-name</p>
       <p>.button-nav</p>
 
-        <h4>Sample code:</h4>
+      <h4>Sample code:</h4>
       <pre><code>
     &lt;table class="checkout-table"&gt;
       &lt;tr&gt;
@@ -600,15 +582,21 @@
 
       <section class="element">
         <h3 class="header-margin2">Why might our company entice someone to purchase a product or service</h3>
-        <p> Our company will entice gamers to play its games in order to generate revenue and share their artistic creations. The company may promote their games to gamers with an interest to similar video game genres or playstyles, outlined in the company personae.</p>
+        <p> Our company will entice gamers to play its games in order to generate revenue and share their artistic
+          creations. The company may promote their games to gamers with an interest to similar video game genres or
+          playstyles, outlined in the company personae.</p>
       </section>
 
       <section class="element">
         <h3 class="header-margin2">Customer Personae</h3>
         <h4>Supportive Sally</h4>
-        <p> Our first persona is "Supportive Sally", who is interested in supporting local, independant game studios. Sally is a young adult and an avid gamer and represents a demographic that is used to playing various video games, but takes an interest in smaller, local creators like ourselves. </p>
+        <p> Our first persona is "Supportive Sally", who is interested in supporting local, independant game studios.
+          Sally is a young adult and an avid gamer and represents a demographic that is used to playing various video
+          games, but takes an interest in smaller, local creators like ourselves. </p>
         <h4>Casual Carl</h4>
-        <p> Our second persona is "Casual Carl" who, like Sally, is a young adult, but is less of a regular gamer. Carl semi-frequently plays games on his computer as a pastime. Unlike Sally, he doesn't care about who made a game, Carl simply looks for games that are more relaxed with low-stakes, such as our Bird Game franchise. </p>
+        <p> Our second persona is "Casual Carl" who, like Sally, is a young adult, but is less of a regular gamer. Carl
+          semi-frequently plays games on his computer as a pastime. Unlike Sally, he doesn't care about who made a game,
+          Carl simply looks for games that are more relaxed with low-stakes, such as our Bird Game franchise. </p>
       </section>
     </section>
 
@@ -618,7 +606,9 @@
       <section class="element">
         <h3 class="header-margin2">Fonts</h3>
         <h3 class="clash-display-font">Primary Font - Clash Display</h3>
-        <p>Legible, fun. clear, big, and playful. but still forword leaning. <br>Works as a loud voice of the brand for headlines, logo, section headings and callouts It reads confidently at large sizes without losing personality, which fits a games brands that wants to feel alive other the edgy corporte feel.</p>
+        <p>Legible, fun. clear, big, and playful. but still forword leaning. <br>Works as a loud voice of the brand for
+          headlines, logo, section headings and callouts It reads confidently at large sizes without losing personality,
+          which fits a games brands that wants to feel alive other the edgy corporte feel.</p>
 
         <p class="satoshi-font">Body Text - Satoshi</p>
 
@@ -627,7 +617,7 @@
           summaries, checkout and footer text.
           Keeps the site welcoming, trustworthy and easy to browse. Not
           overwhelming the users</p>
-        
+
         <br>
         <h3 class="header-margin2">Font Pairings</h3>
         <p>
@@ -660,12 +650,8 @@
             on top of a harsh white
           </p>
 
-          <img
-            src="../img/colourpalette.png"
-            alt="Game night invitation"
-            width="400"
-          />
-          
+          <img src="../img/colourpalette.png" alt="Game night invitation" width="400" />
+
         </ul>
       </section>
 
@@ -678,32 +664,12 @@
           while still selling the product.
         </p>
         <figure>
-          <img
-            src="../img/boardgamedoodle.png"
-            alt="Illustration of board game"
-            width="200"
-          />
-          <img
-            src="../img/gamenightposter.png"
-            alt="Game night invitation"
-            width="200"
-          />
-          <img
-            src="../img/vignelliposter.png"
-            alt="Game night invitation"
-            width="200"
-          />
-          <img 
-            src="../img/poster2.png" 
-            alt="Game night invitation" 
-            width="200" 
-          />
+          <img src="../img/boardgamedoodle.png" alt="Illustration of board game" width="200" />
+          <img src="../img/gamenightposter.png" alt="Game night invitation" width="200" />
+          <img src="../img/vignelliposter.png" alt="Game night invitation" width="200" />
+          <img src="../img/poster2.png" alt="Game night invitation" width="200" />
 
-          <img
-            src="../img/littleonesinspo.jpg"
-            alt="Little Ones Design Inspo"
-            width="400"
-          />
+          <img src="../img/littleonesinspo.jpg" alt="Little Ones Design Inspo" width="400" />
         </figure>
       </section>
     </section>
@@ -723,57 +689,40 @@
           Mozilla. Organization. 2026. <strong>CSS Documentation Reference</strong>.
           Retrieved from
           <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
-            >https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a
-          >
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a>
         </li>
         <li>
           Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
           Retrieved from
           <a
-            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
-            >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
-          >
+            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
         </li>
         <li>
           <strong>Vignelli Inspo Photo</strong>.
           Retrieved from
-          <a
-            href="https://studio-size.com/studio/"
-            >https://studio-size.com/studio/</a
-          >
+          <a href="https://studio-size.com/studio/">https://studio-size.com/studio/</a>
         </li>
         <li>
           <strong>Little Ones Inspo</strong>.
           Retrieved from
-          <a
-            href="https://www.gapogg.com/littleones"
-            >https://www.gapogg.com/littleones</a
-          >
+          <a href="https://www.gapogg.com/littleones">https://www.gapogg.com/littleones</a>
         </li>
         <li>
           <strong>Frases De Ano Nuevo</strong>.
           Retrieved from
           <a
-            href="https://www.instagram.com/phenom.idiomas/p/DS5l6BhmGrs/"
-            >https://www.instagram.com/phenom.idiomas/p/DS5l6BhmGrs/</a
-          >
+            href="https://www.instagram.com/phenom.idiomas/p/DS5l6BhmGrs/">https://www.instagram.com/phenom.idiomas/p/DS5l6BhmGrs/</a>
         </li>
         <li>
           <strong>Game Night Inspo Poster</strong>.
           Retrieved from
           <a
-            href="https://ca.pinterest.com/pin/4610771305646258944/"
-            >https://ca.pinterest.com/pin/4610771305646258944/</a
-          >
+            href="https://ca.pinterest.com/pin/4610771305646258944/">https://ca.pinterest.com/pin/4610771305646258944/</a>
         </li>
         <li>
           <strong>Top Down Doodle Board Game Poster</strong>.
           Retrieved from
-          <a
-            href="https://ca.pinterest.com/virinaflora/"
-            >https://ca.pinterest.com/virinaflora/</a
-          >
+          <a href="https://ca.pinterest.com/virinaflora/">https://ca.pinterest.com/virinaflora/</a>
         </li>
         <li>
           Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved
@@ -781,5 +730,6 @@
         </li>
       </ul>
     </section>
-  </body>
+</body>
+
 </html>

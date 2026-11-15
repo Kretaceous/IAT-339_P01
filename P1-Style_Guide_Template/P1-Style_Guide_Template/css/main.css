@@ -8,6 +8,13 @@ body {
   font-weight: normal;
   margin: 0;
   padding: 2rem;
+
+  /* Gradient stretches across the entire scrollable page */
+  background: linear-gradient(to right,
+      #dbc99b 0%,
+      #fbf5e6 33%,
+      #fbf5e6 66%,
+      #dbc99b 100%);
 }
 
 .element {
@@ -15,51 +22,6 @@ body {
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: #2036a8;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Clash Display";
-  font-weight: bold;
-}
-
-h1 {
-  color: #5c8df6;
-}
-
-.header-margin {
-  margin-top: 6rem;
-}
-
-.header-margin2 {
-  margin-top: 3rem;
-}
-
-h4 {
-  margin-bottom: 0.25rem;
-}
-
-p {
-  font-family: "Satoshi";
-  font-weight: lighter;
-  margin-top: 0;
-}
-
-/* In-text links */
-p a {
-  color: #5c8df6;
-  transition-duration: 0.5s;
-}
-
-p a:hover,
-p a:focus {
-  outline: none;
-  color: #ff7a00;
-  text-decoration: none;
 }
 
 nav a {
@@ -299,6 +261,52 @@ label {
   TEXT ELEMENTS -------------------
 */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Clash Display";
+  font-weight: bold;
+}
+
+h1 {
+  color: #5c8df6;
+}
+
+.header-margin {
+  margin-top: 6rem;
+}
+
+.header-margin2 {
+  margin-top: 3rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  font-family: "Satoshi";
+  font-weight: lighter;
+  margin-top: 0;
+}
+
+/* In-text links */
+p a {
+  color: #5c8df6;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+p a:hover,
+p a:focus {
+  outline: none;
+  color: #ff7a00;
+  text-decoration: none;
+}
+
 /* 
   COMBINED ELEMENTS -------------------
 */
@@ -311,11 +319,6 @@ label {
   margin-bottom: 2rem;
   padding: 2rem;
   background-image:
-    linear-gradient(
-      to right,
-      rgba(251, 245, 230, 0.3) 33%,
-      rgba(251, 245, 230, 0.3)
-    ),
     url("../img/SkyBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -324,6 +327,7 @@ label {
   width: 100%;
   margin-left: -2rem;
   margin-top: -2rem;
+  border-bottom: 1rem solid #66C26D;
 }
 
 /* Product list stuff */
@@ -498,8 +502,8 @@ label {
 footer {
   text-align: center;
   margin-top: 5rem;
-  background-color: #b5e61d;
-  border-top: 1rem solid #22b14c;
+  background-color: #C8E54D;
+  border-top: 1rem solid #66C26D;
 
   /* Pushes footer to screen edge, while keeping page padding */
   width: 100%;
@@ -565,7 +569,6 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 1rem;
 }
 
 .centered dd dt {
@@ -614,6 +617,7 @@ footer {
   .half-screen-element {
     width: 100%;
   }
+
   .team-grid {
     grid-template-columns: 1fr;
   }
