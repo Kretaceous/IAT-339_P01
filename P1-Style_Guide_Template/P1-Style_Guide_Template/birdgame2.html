@@ -29,9 +29,6 @@
   </header>
 
   <!-- Game Image -->
-
-
-
   <section class="flex-grid ">
     <section class="flex-column">
     </section>
@@ -139,79 +136,58 @@
   <section class="element" id="reviews">
     <h2>Player Reviews</h2>
 
-    <div class="flex-grid game-review-row">
+    <div id="review-container" class="flex-grid game-review-row">
+      <article>
+        <h4>Eshan</h4>
+        <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+        <p>SO MUCH FUN</p>
+      </article>
 
-      <div class="flex-column game-info-column">
-        <article>
-          <h4>Eshan<br>
-            &#9733;&#9733;&#9733;&#9733;&#9733;
-          </h4>
-          <p>SO MUCH FUN</p>
-        </article>
-      </div>
+      <article>
+        <h4>CoolGuy2000</h4>
+        <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+        <p>You gotta play this with friends, what a blast</p>
+      </article>
 
-      <div class="flex-column game-info-column">
-        <article>
-          <h4>CoolGuy2000<br>
-            &#9733;&#9733;&#9733;&#9733;&#9733;
-          </h4>
-          <p>You gotta play this with friends, what a blast</p>
-        </article>
-      </div>
-
-      <div class="flex-column game-info-column">
-        <article>
-          <h4>BirdWatcher99<br>
-            &#9733;&#9733;&#9733;&#9733;&#9733;
-          </h4>
-          <p>I love birds and I love this game</p>
-        </article>
-      </div>
+      <article>
+        <h4>BirdWatcher99</h4>
+        <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+        <p>I love birds and I love this game</p>
+      </article>
     </div>
-
-
   </section>
-
 
   <section class="element">
     <h2>Leave Your Feedback</h2>
-    <div class="flex-grid">
-      <div class="flex-column game-info-column">
-
-        <form method="post" action="#">
+    <form id="review-form" class="">
+      <div class="flex-container centered">
+        <div>
+          
           <div class="rating">
-            <label>Name: </label> <br />
-            <input type="text" class="form-input" placeholder="Username" />
-          </div> <br />
+            <label for="name-input">Name: </label> <br />
+            <input id="name-input" type="text" class="form-input" placeholder="Username" required />
+          </div><br />
 
-          <label>Choose Star Rating: </label>
-          <div class="rating">
-            <input type="radio" name="rating" id="star5" value="5"><label for="star5"></label>
-            <input type="radio" name="rating" id="star4" value="4"><label for="star4"></label>
-            <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
-            <input type="radio" name="rating" id="star2" value="2"><label for="star2"></label>
-            <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
-          </div>
-          <a class="button-input header-margin2" href="">Submit Rating</a>
-        </form>
+          <label>Choose Star Rating:
+            <div class="rating">
+              <input type="radio" name="rating" id="star5" value="1" required><label for="star5"></label>
+              <input type="radio" name="rating" id="star4" value="2"><label for="star4"></label>
+              <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
+              <input type="radio" name="rating" id="star2" value="4"><label for="star2"></label>
+              <input type="radio" name="rating" id="star1" value="5"><label for="star1"></label>
+            </div>
+          </label>
+          <button type="submit" class="button-input submitreview header-margin2">Submit Rating</button>
+        </div>
+        
+        <div class="rating">
+          <label for="review-input">Review: </label> <br/>
+          <input id="review-input" type="text" class="form-input game-review-input" placeholder="Write your review here"
+            required />
+        </div>
 
       </div>
-
-      <div class="flex-column game-info-column">
-        <form method="post" action="#">
-          <div class="rating">
-            <label>Review: </label> <br />
-            <input type="text" class="form-input game-review-input" placeholder="Write your review here" />
-          </div> <br />
-        </form>
-      </div>
-    </div>
-
-
-
-
-
-
+    </form>
   </section>
 
 
@@ -225,6 +201,8 @@
       <a href="https://github.com/Kretaceous/IAT-339_P01">GitHub Repository</a>
     </p>
   </footer>
+
+  <script src="js/reviewscript.js"></script>
 
 </body>
 
