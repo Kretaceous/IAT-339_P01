@@ -366,12 +366,12 @@
         </div>
       </section>
 
-
-      <section id="checkout-and-payment-section" class="flex-container checkout-layout">
+    <div class="element">
+      <section>
         <h3 class="header-margin2">Payment Form</h3>
 
         <h4>Rendered element:</h4>
-
+      <div class="checkout-layout">
         <div class="payment-form">
           <form method="post" action="#">
             <label>Name: </label> <br>
@@ -419,6 +419,7 @@
           </form>
 
         </div>
+      </div>
 
         <h4>CSS Selector:</h4>
         <p>.payment-form</p>
@@ -473,40 +474,42 @@
 
       </section>
 
-      <section id="checkout-and-payment-section" class="flex-container checkout-layout element">
+      <section>
         <h3 class="header-margin2">Checkout Cart</h3>
 
         <h4>Rendered element:</h4>
-        <table class="checkout-table">
-          <tr>
-            <th>Game</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Item Total</th>
-          </tr>
-          <tr>
-            <td class="game-cell">
-              <span class="game-name">Bird Game: Wacky Wings</span>
-              <img src="../img/BirdGame1.png" alt="MSpaint_BirdGame1_thumbnail">
-            </td>
-            <td>$9.99</td>
-            <td>1</td>
-            <td>$9.99</td>
-          </tr>
-          <tr>
-            <td class="game-cell">
-              <span class="game-name">Bird Game 2: Bird's Return</span>
-              <img src="../img/BirdGame2.png" alt="MSpaint_BirdGame2_thumbnail">
-            </td>
-            <td>$14.99</td>
-            <td>1</td>
-            <td>$14.99</td>
-          </tr>
-          <tr class="total-row">
-            <th colspan="3">Total</th>
-            <th>$24.98</th>
-          </tr>
-        </table>
+        <div class="checkout-layout">
+          <table class="checkout-table">
+            <tr>
+              <th>Game</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Item Total</th>
+            </tr>
+            <tr>
+              <td class="game-cell">
+                <span class="game-name">Bird Game: Wacky Wings</span>
+                <img src="../img/BirdGame1.png" alt="MSpaint_BirdGame1_thumbnail">
+              </td>
+              <td>$9.99</td>
+              <td>1</td>
+              <td>$9.99</td>
+            </tr>
+            <tr>
+              <td class="game-cell">
+                <span class="game-name">Bird Game 2: Bird's Return</span>
+                <img src="../img/BirdGame2.png" alt="MSpaint_BirdGame2_thumbnail">
+              </td>
+              <td>$14.99</td>
+              <td>1</td>
+              <td>$14.99</td>
+            </tr>
+            <tr class="total-row">
+              <th colspan="3">Total</th>
+              <th>$24.98</th>
+            </tr>
+          </table>
+        </div>
 
       </section>
 
@@ -524,42 +527,40 @@
 
       <h4>Sample code:</h4>
       <pre><code>
-    &lt;table class="checkout-table"&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Game&lt;/th&gt;
-        &lt;th&gt;Price&lt;/th&gt;
-        &lt;th&gt;Quantity&lt;/th&gt;
-        &lt;th&gt;Item Total&lt;/th&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="game-cell"&gt;
-          &lt;span class="game-name"&gt;Bird Game: Wacky Wings&lt;/span&gt;
-          &lt;img src="./img/BirdGame1.png" alt="Bird Game: Wacky Wings cover"&gt;
-        &lt;/td&gt;
-        &lt;td&gt;$9.99&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;$9.99&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td class="game-cell"&gt;
-          &lt;span class="game-name"&gt;Bird Game 2: Bird's Return&lt;/span&gt;
-          &lt;img src="./img/BirdGame2.png" alt="Bird Game 2: Bird's Return cover"&gt;
-        &lt;/td&gt;
-        &lt;td&gt;$14.99&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;$14.99&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr class="total-row"&gt;
-        &lt;th colspan="3"&gt;Total&lt;/th&gt;
-        &lt;th&gt;$24.98&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/table&gt;
-
-    &lt;a class="button-nav" href="#"&gt;Checkout&lt;/a&gt;
+        &lt;table class="checkout-table"&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Game&lt;/th&gt;
+            &lt;th&gt;Price&lt;/th&gt;
+            &lt;th&gt;Quantity&lt;/th&gt;
+            &lt;th&gt;Item Total&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td class="game-cell"&gt;
+              &lt;span class="game-name"&gt;Bird Game: Wacky Wings&lt;/span&gt;
+              &lt;img src="./img/BirdGame1.png" alt="Bird Game: Wacky Wings cover"&gt;
+            &lt;/td&gt;
+            &lt;td&gt;$9.99&lt;/td&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;$9.99&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td class="game-cell"&gt;
+              &lt;span class="game-name"&gt;Bird Game 2: Bird's Return&lt;/span&gt;
+              &lt;img src="./img/BirdGame2.png" alt="Bird Game 2: Bird's Return cover"&gt;
+            &lt;/td&gt;
+            &lt;td&gt;$14.99&lt;/td&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;$14.99&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class="total-row"&gt;
+            &lt;th colspan="3"&gt;Total&lt;/th&gt;
+            &lt;th&gt;$24.98&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+        &lt;a class="button-nav" href="#"&gt;Checkout&lt;/a&gt;
       </code></pre>
-
-
-    </section>
+      </section>
+    </div>
     <!-- // COMPANY ELEMENTS SECTION -->
 
     <section id="company">
@@ -707,7 +708,7 @@
         Authors: Eshan Esmail, Liam Curry, Marielle Reyes Lao<br />
         &lt;a href="styleguide/styleguide.html">Style Guide&lt;/a&gt; | <br/>
         &lt;a href="styleguide/styleguide.html#citations"&gt;Citations&lt;/a&gt;<br />
-        505-544-3029 | phoenixgames@gmail.com<br />
+        505-544-3029 | phoenixgames@gmail.com<br /&gt;
         &lt;a href="https://github.com/Kretaceous/IAT-339_P01"
           &gt;GitHub Repository&lt;/a&gt;
       &lt;/p&gt;

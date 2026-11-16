@@ -516,6 +516,10 @@ footer {
   margin-bottom: -4rem;
 }
 
+.element footer {
+  margin-bottom: 0;
+}
+
 /* NEW CSS things for Detail Product Page */
 .game-info dt {
   font-family: "Clash Display";
