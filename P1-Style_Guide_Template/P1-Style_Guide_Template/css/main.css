@@ -13,11 +13,13 @@ body {
   overflow-x: clip;
 
   /* Gradient stretches across the entire scrollable page */
-  background: linear-gradient(to right,
-      #dbc99b 0%,
-      #fbf5e6 33%,
-      #fbf5e6 66%,
-      #dbc99b 100%);
+  background: linear-gradient(
+    to right,
+    #dbc99b 0%,
+    #fbf5e6 33%,
+    #fbf5e6 66%,
+    #dbc99b 100%
+  );
 }
 
 .element {
@@ -321,8 +323,7 @@ p a:focus {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background-image:
-    url("../img/SkyBanner.png");
+  background-image: url("../img/SkyBanner.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -331,7 +332,7 @@ p a:focus {
   margin-left: -6rem;
   margin-top: -1rem;
   margin-bottom: 2rem;
-  border-bottom: 1rem solid #66C26D;
+  border-bottom: 1rem solid #66c26d;
 }
 
 /* Product list stuff */
@@ -433,8 +434,6 @@ p a:focus {
   justify-content: center;
 }
 
-
-
 .event-list-item:hover,
 .event-list-item:focus {
   scale: 1.05;
@@ -505,8 +504,8 @@ p a:focus {
 
 footer {
   text-align: center;
-  background-color: #C8E54D;
-  border-top: 1rem solid #66C26D;
+  background-color: #c8e54d;
+  border-top: 1rem solid #66c26d;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-top: 5rem;
@@ -626,4 +625,139 @@ footer {
   .team-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 30rem);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.checkout-layout .element {
+  border-top: none;
+}
+
+.checkout-layout .payment-form {
+  background-color: white;
+  border: 2px solid #2036a8;
+  border-radius: 25px;
+  padding: 1rem 1.5rem 1.5rem;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-layout .payment-form form {
+  padding: 0.5rem 0;
+}
+
+.checkout-layout .payment-form label {
+  color: #2036a8;
+}
+
+.checkout-layout .form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem;
+  background-color: #fbf5e6;
+}
+
+.checkout-layout .form-input::placeholder {
+  color: #7a7a7a;
+}
+
+.checkout-layout .form-input:hover,
+.checkout-layout .form-input:focus,
+.checkout-layout .form-input:not(:placeholder-shown) {
+  background-color: #ffd21f;
+  border: 2px solid #ff7a00;
+}
+
+.checkout-layout .payment-form .button-input {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.checkout-layout .checkout-table {
+  width: 100%;
+  border: 2px solid #2036a8;
+}
+
+/* "Game" and "Total" labels on the left */
+.checkout-layout .checkout-table th:first-child {
+  text-align: left;
+}
+
+/* Prices, quantity and totals on the right so the decimals line up */
+.checkout-layout .checkout-table th:not(:first-child),
+.checkout-layout .checkout-table td:not(.game-cell) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Thin line between game rows */
+.checkout-layout .checkout-table td {
+  border-bottom: 1px solid #efe6cf;
+}
+
+/* Thumbnail on the left, game name beside it */
+.checkout-layout .game-cell {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.checkout-layout .checkout-table img {
+  width: 64px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.checkout-layout .game-name {
+  color: #2036a8;
+}
+
+/* Bigger total */
+.checkout-layout .total-row th {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1100px) {
+  .checkout-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 600px;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .checkout-layout {
+    margin-left: -5rem;
+    margin-right: -5rem;
+  }
+
+  .checkout-layout .checkout-table th,
+  .checkout-layout .checkout-table td {
+    padding: 0.6rem;
+  }
+
+  .checkout-layout .checkout-table th:not(:first-child) {
+    white-space: normal;
+  }
+
+  .checkout-layout .checkout-table img {
+    width: 48px;
+  }
+}
+
+pre {
+  white-space: pre-wrap;
 }
