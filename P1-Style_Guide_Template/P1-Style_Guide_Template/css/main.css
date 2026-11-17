@@ -106,8 +106,6 @@ section h2 {
   margin: 0;
 }
 
-
-
 nav a {
   color: #5c8df6;
   transition-duration: 0.5s;
@@ -498,6 +496,20 @@ p a:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: "Satoshi";
   margin-bottom: 1.5rem;
+}
+
+.full-width-button {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
+}
+
+.half-width-button {
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .game-cell {
