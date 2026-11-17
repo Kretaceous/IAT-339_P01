@@ -2,32 +2,111 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
+html {
+  background-color: #5c8df6;
+}
+
 body {
-  background-color: #fbf5e6;
+  margin: 0;
   font-family: "Satoshi";
   font-weight: normal;
-  margin-left: 6rem;
-  margin-right: 6rem;
+}
 
-  /* Prevent clipping for header and footer that are set to 100vw */
-  overflow-x: clip;
-
+main {
+  background-color: #fbf5e6;
   /* Gradient stretches across the entire scrollable page */
-  background: linear-gradient(
-    to right,
-    #dbc99b 0%,
-    #fbf5e6 33%,
-    #fbf5e6 66%,
-    #dbc99b 100%
-  );
+  background: linear-gradient(to right,
+      #dbc99b 0%,
+      #fbf5e6 33%,
+      #fbf5e6 66%,
+      #dbc99b 100%);
+  
+  padding-top: 6rem;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
-.element {
+
+
+
+
+header {
+  text-align: center;
+  align-items: center;
+  background-image: url("../img/SkyBanner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 0.5rem solid #2b9127;
+  padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: #2036a8;
+
+  /* Pushes header to screen edge, while keeping page padding */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
+
+footer {
+  text-align: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  
+  /* Pushes footer to screen edge, while keeping page padding */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  background-color: #c8e54d;
+  border-top: 0.5rem solid #2b9127;
+}
+
+p {
+  color:#272626;
+}
+
+
+/*Basic checkerboard background that scrolls infinitely*/
+.background-pattern {
+  background-image: url("../img/BasicPattern.png");
+  z-index: -1;
+  background-repeat: repeat;
+  background-size: 128px 128px;
+
+  inset: 0;
+  margin: 0;
+  padding: 0;
+
+  animation: diagonal-scroll 10s linear infinite;
+}
+
+@keyframes diagonal-scroll {
+  from{background-position: 0 0;}
+  to {background-position: 128px 128px;}
+}
+
+
+section {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 6rem;
+}
+
+section h2 {
+  border-bottom-style: solid;
+  border-bottom-color: #2036a8;
+  margin: 0;
+}
+
+
 
 nav a {
   color: #5c8df6;
@@ -53,25 +132,45 @@ code {
 */
 
 /* Styling for the input buttons */
-.button-input {
+.button-input, .button-nav, .submit-button, .reset-button {
   display: inline-block;
-  padding: 0.5rem;
+  align-items: center;
 
-  color: white;
-  background-color: #ff7a00;
+  padding: 0.5rem;
+  min-width: 7rem;
+  min-height: 1.1rem;
+  transition-duration: 0.5s;
+  border-radius: 25px;
+  margin: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 
   text-decoration: none;
   font-family: "Clash Display";
-
+  text-align: center;
   outline: none;
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* horizontal offset | vertical offset | blur radius | color */
 
-  padding-left: 2rem;
-  padding-right: 2rem;
-  
-  transition-duration: 0.5s;
+  white-space: nowrap;
+}
+
+.button-input {
+  color: white;
+  background-color: #ff7a00;
+}
+
+.button-nav {
+  color: white;
+  background-color: #5c8df6;
+}
+
+.submit-button {
+  color: white;
+  background-color: #ff7a00;
+  border: none;
+}
+
+.reset-button {
+  color: white;
+  background-color: #5c8df6;
 }
 
 .button-input:hover,
@@ -92,29 +191,6 @@ code {
   filter: brightness(0.75);
 }
 
-/* Styling for the navigation buttons */
-.button-nav {
-  display: inline-block;
-  padding: 0.5rem;
-  margin: 0.25rem;
-
-  color: white;
-  background-color: #5c8df6;
-
-  text-decoration: none;
-  font-family: "Clash Display";
-
-  outline: none;
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-  /* horizontal offset | vertical offset | blur radius | color */
-
-  padding-left: 2rem;
-  padding-right: 2rem;
-
-  transition-duration: 0.5s;
-}
-
 .button-nav:hover,
 .button-nav:focus {
   color: white;
@@ -129,27 +205,6 @@ code {
 
   color: white;
   background-color: #ff7a00;
-
-  text-decoration: none;
-  font-family: "Clash Display";
-
-  border-radius: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* horizontal offset | vertical offset | blur radius | color */
-
-  transition-duration: 0.5s;
-
-  border: none;
-  outline: none;
-}
-
-/* Reset Button */
-.reset-button {
-  display: inline-block;
-  padding: 0.5rem;
-
-  color: white;
-  background-color: #5c8df6;
 
   text-decoration: none;
   font-family: "Clash Display";
@@ -287,12 +342,8 @@ h1 {
   color: #5c8df6;
 }
 
-.header-margin {
-  margin-top: 6rem;
-}
-
 .header-margin2 {
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 h4 {
@@ -322,25 +373,6 @@ p a:focus {
 /* 
   COMBINED ELEMENTS -------------------
 */
-
-.main-nav {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  background-image: url("../img/SkyBanner.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* Pushes header to screen edge, while keeping page padding */
-  width: 100vw;
-  margin-left: -6rem;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-  border-bottom: 1rem solid #66c26d;
-}
 
 /* Product list stuff */
 .product-name {
@@ -421,9 +453,11 @@ p a:focus {
 }
 
 .flex-container {
-  display: flex;
+  display: inline-flex;
   gap: 20px;
   flex-wrap: wrap;
+
+  flex: 1 1 auto;
 }
 
 .flex-grid {
@@ -511,24 +545,6 @@ p a:focus {
   height: auto;
 }
 
-footer {
-  text-align: center;
-  background-color: #c8e54d;
-  border-top: 1rem solid #66c26d;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-top: 5rem;
-
-  /* Pushes footer to screen edge, while keeping page padding */
-  width: 100vw;
-  margin-left: -6rem;
-  margin-bottom: -4rem;
-}
-
-.element footer {
-  margin-bottom: 0;
-}
-
 /* NEW CSS things for Detail Product Page */
 .game-info dt {
   font-family: "Clash Display";
@@ -606,11 +622,16 @@ fieldset {
 /* Meet the Team - 3 column grid */
 .team-grid {
   display: grid;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-top: 1rem;
+
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  width: 100%;
   max-width: 50rem;
   margin-top: 1rem;
+  margin-inline: auto;
 }
 
 .team-card {

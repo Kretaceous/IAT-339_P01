@@ -8,131 +8,136 @@
     <link href="css/fonts.css" type="text/css" rel="stylesheet" />
   </head>
 
-  <body>
-    <!-- NAV -->
+  <body class="background-pattern">
+    <!-- HEADER -->
     <header id="header">
       <div class="main-nav">
+        
+        <!-- Logo -->
         <div class="logo-items">
-          <h1>
-            <img
-              class="logo-image"
-              src="img/CompanyLogo.png"
-              alt="Company Logo"
-            />
-            <br />
-            Phoenix Games
-          </h1>
+          <img class="logo-image" src="img/CompanyLogo.png" alt="Company Logo"/>
+          <h1>Phoenix Games </h1>
         </div>
+
+        <!-- Navigation -->
         <nav class="nav-buttons">
           <a href="index.html#events" class="button-nav">News</a>
           <a href="index.html#product-list" class="button-nav">Games</a>
           <a href="checkout.html" class="button-nav">Cart</a>
           <a href="about.html" class="button-nav">About Us</a>
         </nav>
+
       </div>
     </header>
 
-    <!-- Checkout Cart and Payment Section // -->
-    <div
-      id="checkout-and-payment-section"
-      class="flex-container checkout-layout"
-    >
-      <section class="element">
-        <h2 class="header-margin2">My Cart</h2>
-        <table class="checkout-table">
-          <tr>
-            <th>Game</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Item Total</th>
-          </tr>
-          <tr>
-            <td class="game-cell">
-              <span class="game-name">Bird Game: Wacky Wings</span>
-              <img
-                src="./img/BirdGame1.png"
-                alt="MSpaint_BirdGame1_thumbnail"
+    <!-- MAIN CONTENT -->
+    <main>
+    
+    <!--CHECKOUT-->
+    <section id="checkout-and-payment-section">
+      <h2>Checkout</h2>
+
+      <!--CART-->
+      <div class="flex-container checkout-layout">
+        <section id="checkout-cart">
+          <h3>My Cart</h3>
+          <table class="checkout-table">
+            <tr>
+              <th>Game</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Item Total</th>
+            </tr>
+            <tr>
+              <td class="game-cell">
+                <span class="game-name">Bird Game: Wacky Wings</span>
+                <img
+                  src="./img/BirdGame1.png"
+                  alt="MSpaint_BirdGame1_thumbnail"
+                />
+              </td>
+              <td>$9.99</td>
+              <td>1</td>
+              <td>$9.99</td>
+            </tr>
+            <tr>
+              <td class="game-cell">
+                <span class="game-name">Bird Game 2: Bird's Return</span>
+                <img
+                  src="./img/BirdGame2.png"
+                  alt="MSpaint_BirdGame2_thumbnail"
+                />
+              </td>
+              <td>$14.99</td>
+              <td>1</td>
+              <td>$14.99</td>
+            </tr>
+            <tr class="total-row">
+              <th colspan="3">Total</th>
+              <th>$24.98</th>
+            </tr>
+          </table>
+        </section>
+
+        <!--PAYMENT-->
+        <section id="checkout-payment" class="checkout-payment">
+          <h3>Payment</h3>
+          <div class="payment-form">
+            <form method="post" action="#">
+              <label>Name: </label> <br />
+              <input type="text" class="form-input" placeholder="John Smith" />
+            </form>
+
+            <form method="post" action="#">
+              <label>Address: </label> <br />
+              <input
+                type="text"
+                class="form-input"
+                placeholder="Unit 1, 123 Street"
               />
-            </td>
-            <td>$9.99</td>
-            <td>1</td>
-            <td>$9.99</td>
-          </tr>
-          <tr>
-            <td class="game-cell">
-              <span class="game-name">Bird Game 2: Bird's Return</span>
-              <img
-                src="./img/BirdGame2.png"
-                alt="MSpaint_BirdGame2_thumbnail"
+            </form>
+
+            <form method="post" action="#">
+              <label>Payment Type: </label> <br />
+              <input type="radio" name="radio_button" />
+              <label>Credit</label>
+              <input type="radio" name="radio_button" />
+              <label>Debit</label>
+            </form>
+
+            <form method="post" action="#">
+              <label>Card Number: </label> <br />
+              <input
+                type="text"
+                class="form-input"
+                placeholder="000 000 000 0000"
               />
-            </td>
-            <td>$14.99</td>
-            <td>1</td>
-            <td>$14.99</td>
-          </tr>
-          <tr class="total-row">
-            <th colspan="3">Total</th>
-            <th>$24.98</th>
-          </tr>
-        </table>
-      </section>
+            </form>
 
-      <section class="checkout-payment">
-        <h2 class="header-margin2">Payment</h2>
-        <div class="payment-form">
-          <form method="post" action="#">
-            <label>Name: </label> <br />
-            <input type="text" class="form-input" placeholder="John Smith" />
-          </form>
+            <form method="post" action="#">
+              <label>ZIP: </label> <br />
+              <input type="text" class="form-input" placeholder="123 ABC" />
+            </form>
 
-          <form method="post" action="#">
-            <label>Address: </label> <br />
-            <input
-              type="text"
-              class="form-input"
-              placeholder="Unit 1, 123 Street"
-            />
-          </form>
+            <form method="post" action="#">
+              <label> Do you consent to user terms and agreements? </label> <br />
+              <input type="radio" name="consent_button" />
+              <label>Yes</label>
+              <input type="radio" name="consent_button" />
+              <label>No</label>
+            </form>
 
-          <form method="post" action="#">
-            <label>Payment Type: </label> <br />
-            <input type="radio" name="radio_button" />
-            <label>Credit</label>
-            <input type="radio" name="radio_button" />
-            <label>Debit</label>
-          </form>
-
-          <form method="post" action="#">
-            <label>Card Number: </label> <br />
-            <input
-              type="text"
-              class="form-input"
-              placeholder="000 000 000 0000"
-            />
-          </form>
-
-          <form method="post" action="#">
-            <label>ZIP: </label> <br />
-            <input type="text" class="form-input" placeholder="123 ABC" />
-          </form>
-
-          <form method="post" action="#">
-            <label> Do you consent to user terms and agreements? </label> <br />
-            <input type="radio" name="consent_button" />
-            <label>Yes</label>
-            <input type="radio" name="consent_button" />
-            <label>No</label>
-          </form>
-
-          <form method="post" action="#">
-            <h3>
-              <a class="button-input" href="thankyou.html">Purchase</a>
-            </h3>
-          </form>
+            <form method="post" action="#">
+              <h3>
+                <a class="button-input" href="thankyou.html">Purchase</a>
+              </h3>
+            </form>
+          </div>
         </div>
       </section>
-    </div>
+    </main>
 
+    <!--FOOTER-->
     <footer>
       <p class="footer-info">
         © 2026 Pheonix Games Inc. All Rights Reserved.<br />
