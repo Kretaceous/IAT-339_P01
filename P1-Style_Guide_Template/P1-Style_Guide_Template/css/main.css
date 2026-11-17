@@ -23,8 +23,8 @@ main {
       #dbc99b 100%);
   
   padding-top: 6rem;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 
 
@@ -801,6 +801,7 @@ fieldset {
     width: 48px;
   }
 }
+
 
 pre {
   white-space: pre-wrap;
