@@ -13,15 +13,14 @@ reviewForm.addEventListener("submit", function(event) {
     username.textContent = document.getElementById('name-input').value;
     document.getElementById('name-input').value = '';
 
-    var selectedRating = document.querySelector('input[name="rating"]:checked')?.value;
+    var selectedRating = document.querySelector('input[name="rating"]:checked').value;
     var starString = "";
     for (var i = 0; i < selectedRating; i++) {
       starString += '\u2605';
     }
-    if (starString != '') {
-      var rating = document.createElement('h4');
-      rating.textContent = starString;
-    }
+    
+    var rating = document.createElement('h4');
+    rating.textContent = starString;
 
     var review = document.createElement('p');
     review.textContent = document.getElementById('review-input').value;

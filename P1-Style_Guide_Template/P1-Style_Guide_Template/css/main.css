@@ -68,6 +68,9 @@ code {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* horizontal offset | vertical offset | blur radius | color */
 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
   transition-duration: 0.5s;
 }
 
@@ -105,6 +108,9 @@ code {
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
   /* horizontal offset | vertical offset | blur radius | color */
+
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   transition-duration: 0.5s;
 }
@@ -553,7 +559,8 @@ footer {
 
 .game-review-input {
   width: 20rem;
-  padding-bottom: 10rem;
+  min-height: 10rem;
+  resize: none;
 }
 
 .submitreview {
