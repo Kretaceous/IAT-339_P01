@@ -29,19 +29,16 @@
   </header>
 
   <!-- Game Image -->
-  <section class="flex-grid ">
-    <section class="flex-column">
-    </section>
-  </section>
-  <section class="flex-container centered">
+  <section class="flex-column centered">
+    <h2>Bird Game: Wacky Wings</h2>
     <img class="product-image" src="img/BirdGame1.png" alt="Video game cover image of Bird Game 1" width="300"
       height="300" />
   </section>
 
   <!-- Two columns: with game desc left and info right -->
-  <section class="flex-grid header-margin2">
+  <section class="flex-grid header-margin">
 
-    <section class="flex-column game-info-column">
+    <div class="flex-column game-info-column">
       <h3>The best game to ever exist.</h3>
       <p>
         Take to the skies in the original pioneer of the Bird Game series! Fly
@@ -67,11 +64,10 @@
         Splitscreen PvP
       </p>
 
+    </div>
 
-    </section>
 
-
-    <section class="flex-column game-info-column game-cta">
+    <div class="flex-column game-info-column game-cta">
 
       <h2>Game Info</h2>
       <dl class="game-info">
@@ -101,13 +97,12 @@
         <dd>10 GB Space Required</dd>
       </dl>
 
-
-    </section>
+    </div>
   </section>
 
   <section class="flex-grid">
 
-    <section class="flex-column game-info-column game-buttons">
+    <div class="flex-column game-info-column game-buttons">
 
       <div class="centered">
         <h2 class="header-margin2">
@@ -119,9 +114,9 @@
         <a class="button-nav" href="index.html#product-list">Back to Our Games</a>
       </div>
 
-    </section>
+    </div>
 
-    <section class="flex-column game-info-column game-buttons">
+    <div class="flex-column game-info-column game-buttons">
 
       <div class="centered">
         <h2>
@@ -132,7 +127,7 @@
         <a class="button-input" href="birdgame2.html">See Bird Game 2: Bird's Return</a>
         <a class="button-nav" href="#reviews">Read Reviews</a>
       </div>
-    </section>
+    </div>
     <br>
   </section>
 
@@ -142,20 +137,20 @@
     <div id="review-container" class="flex-grid game-review-row">
 
       <article>
-        <h4>Marielle</h4>
-        <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+        <h3>Marielle</h3>
+        <h3>&#9733;&#9733;&#9733;&#9733;&#9733;</h3>
         <p>w game frfr.</p>
       </article>
 
       <article>
-        <h4>BirdEnthusiast</h4>
-        <h4>&#9733;&#9733;&#9733;&#9733;</h4>
+        <h3>BirdEnthusiast</h3>
+        <h3>&#9733;&#9733;&#9733;&#9733;</h3>
         <p>Perfect for any bird lover!.</p>
       </article>
 
       <article>
-        <h4>CasualGamer</h4>
-        <h4>&#9733;&#9733;&#9733;&#9733;&#9733;</h4>
+        <h3>CasualGamer</h3>
+        <h3>&#9733;&#9733;&#9733;&#9733;&#9733;</h3>
         <p>a classic, a gem of a pastime</p>
       </article>
     </div>
@@ -172,21 +167,20 @@
             <input id="name-input" type="text" class="form-input" placeholder="Username" required />
           </div><br />
 
-          <label>Choose Star Rating:
-            <div class="rating">
-              <input type="radio" name="rating" id="star5" value="1" required><label for="star5"></label>
-              <input type="radio" name="rating" id="star4" value="2"><label for="star4"></label>
-              <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
-              <input type="radio" name="rating" id="star2" value="4"><label for="star2"></label>
-              <input type="radio" name="rating" id="star1" value="5"><label for="star1"></label>
-            </div>
-          </label>
+          <label for="star1">Choose Star Rating:</label>
+            <fieldset class="rating">
+            <input type="radio" name="rating" id="star5" value="1" required><label for="star5"></label>
+            <input type="radio" name="rating" id="star4" value="2"><label for="star4"></label>
+            <input type="radio" name="rating" id="star3" value="3"><label for="star3"></label>
+            <input type="radio" name="rating" id="star2" value="4"><label for="star2"></label>
+            <input type="radio" name="rating" id="star1" value="5"><label for="star1"></label>
+            </fieldset>
           <button type="submit" class="button-input submitreview header-margin2">Submit Rating</button>
         </div>
         
         <div class="rating">
           <label for="review-input">Review: </label> <br/>
-          <textarea id="review-input" type="text" class="form-input game-review-input" placeholder="Write your review here"
+          <textarea id="review-input" class="form-input game-review-input" placeholder="Write your review here"
             required></textarea>
         </div>
 

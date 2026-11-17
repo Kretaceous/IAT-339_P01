@@ -393,6 +393,8 @@ p a:focus {
 }
 
 .event-image {
+  width: 100%;
+  height: 100%;
   border-radius: 1em;
   border: 0.2em solid #5c8df6;
   object-fit: fill;
@@ -561,6 +563,10 @@ footer {
   width: 20rem;
   min-height: 10rem;
   resize: none;
+}
+
+fieldset {
+  border: none;
 }
 
 .submitreview {

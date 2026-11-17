@@ -9,7 +9,7 @@ reviewForm.addEventListener("submit", function(event) {
     var newReview = document.createElement("article");
 
     // Create review and clear inputs
-    var username = document.createElement('h4');
+    var username = document.createElement('h3');
     username.textContent = document.getElementById('name-input').value;
     document.getElementById('name-input').value = '';
 
